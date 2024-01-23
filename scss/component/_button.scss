@@ -1,0 +1,24 @@
+.tf-button {
+    width: max-content;
+    height: 50px;
+    padding: 15px 22px;
+    color: var(--White);
+    @include flex(center,center);
+    gap: 8px;
+    font-family: $font-main-family;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border: 1px solid var(--Main);
+    border-radius: 12px;
+    background-color: var(--Main);
+    background-size: 100%;
+    @include transition3();
+    &:hover {
+        color: var(--Main);    
+        background-color: var(--White);
+    }
+    i {
+        font-size: 20px;
+    }
+}

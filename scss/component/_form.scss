@@ -1,0 +1,145 @@
+form {
+    position: relative;
+    &.form-search {
+        .button-submit {
+            position: absolute;
+            top: 15px;
+            right: 22px;
+            button {
+                padding: 0;
+                border: 0;
+                font-size: 20px;
+                color: var(--Heading);
+            }
+        }
+    }
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+        outline           : 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow   : none;
+        box-shadow        : none;
+        width: 100%;
+        padding: 14px 22px;
+        font-size: 14px;
+        font-family: $font-main-family;
+        font-weight: 400;
+        line-height: 20px;
+        background-color: transparent;
+        border: 1px solid var(--Input);
+        border-radius: 12px;
+        color: var(--Heading);
+        overflow: hidden;
+        margin-bottom: 0;
+        &::placeholder {
+            font-size: 14px;
+            font-family: $font-main-family;
+            font-weight: 400;
+            line-height: 20px;
+            color: var(--Heading);
+        }
+    }
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        padding: 14px 22px;
+        font-size: 14px;
+        font-family: $font-main-family;
+        font-weight: 400;
+        line-height: 20px;
+        background-color: transparent;
+        border: 1px solid var(--Input);
+        border-radius: 12px;
+        color: var(--Heading);
+        overflow: hidden;
+        display           : inline-block;
+        -webkit-appearance: none;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition   : all 0.3s ease;
+        transition        : all 0.3s ease;
+        position          : relative;
+        &:hover {
+            color: var(--primary);
+        }
+    }
+    textarea {
+        height: 195px !important;
+    }
+}
+
+fieldset {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.select {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '\e934';
+        right: 12px;
+        top: 50%;
+        font-family: $fontIcon;
+        font-size: 14px;
+        color: var(--Body-Text);
+        background-color: var(--secondary);
+        pointer-events: none;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+select {
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 14px 22px;
+    font-family: $font-main-family;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: transparent;
+    border: 1px solid var(--Input);
+    border-radius: 12px;
+    color: var(--Heading);
+    margin-bottom: 0px;
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    option {
+        font-family: $font-main-family;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: var(--Heading);
+        background: var(--backdrop);
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+}
+

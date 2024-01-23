@@ -1,0 +1,64 @@
+.header {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    width: 100%;
+    .header-inner {
+
+        .header-inner-wrap {
+            @include flex(center,space-between);
+            .header-left {
+                padding-left: 5px;
+            }
+            .header-right {
+                @include flex(center,center);
+                gap: 20px;
+                .header-news {
+                    color: var(--Body-Text);
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 21px;
+                    text-transform: capitalize;
+                }
+                .header-button {
+                    @include flex(center,center);
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
+
+.header-dashboard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 280px);
+    height: 80px;
+    padding: 15px 13px 15px 30px;
+    background: var(--White);
+    box-shadow: 0px 4px 24px 0px rgba(20, 25, 38, 0.05);
+    z-index: 19;
+    .wrap {
+        @include flex(center,space-between);
+        .header-search {
+            width: 100%;
+            max-width: 780px;
+        }
+        .header-grid {
+            @include d-flex;
+            gap: 20px;
+        }
+        .header-item {
+            @include flex(center,center);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(203, 213, 225, 0.30);
+            i {
+                font-size: 20px;
+                color: var(--Heading);
+            }
+        }
+    }
+}
