@@ -80,11 +80,25 @@
     $(this).closest('.dropdown').find('.dropdown-menu').removeClass('show');
   });
 
+  var progresslevel = function () {
+    if ($('div').hasClass('progress-level-bar')) {
+    var bars = document.querySelectorAll('.progress-level-bar > span');
+    setInterval(function(){
+    bars.forEach(function(bar){
+      var t1 = parseFloat(bar.dataset.progress);
+      var t2 = parseFloat(bar.dataset.max);
+      var getWidth = ( t1 / t2) * 100;
+      bar.style.width = getWidth + '%';
+    });
+    }, 500);
+  }}
+
   // Dom Ready
   $(function () {
     selectImages();
     menuleft();
     tabs();
+    progresslevel();
     
   });
 

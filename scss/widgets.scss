@@ -1,5 +1,77 @@
 
+.text-tiny {
+    color: var(--Note);
+    font-size: 12px;
+    line-height: 15px;
+}
 
+.body-title {
+    color: var(--Heading);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.body-title-2 {
+    color: var(--Heading);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    span {
+        color: var(--Style)
+    }
+}
+
+.body-text {
+    color: var(--Body-Text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.icon-more {
+    font-size: 24px;
+    color: var(--Heading);
+    cursor: pointer;
+}
+
+.view-all {
+    @include d-flex;
+    align-items: center;
+    color: var(--Note);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    i {
+        font-size: 16px;
+    }
+}
+
+.box-icon-trending {
+    @include d-flex;
+    align-items: center;
+    gap: 8px;
+    i {
+        @include flex(center,center);
+        width: 24px;
+        height: 24px;
+        font-size: 21px;
+        color: var(--Palette-Blue-Gray-300);
+    }
+    .number {
+        color: var(--Body-Text)
+    }
+    &.down {
+        i {
+            color: var(--Palette-Red-500);
+        }
+    }
+    &.up {
+        i {
+            color: var(--Palette-Green-500);
+        }
+    }
+}
 
 .image-select {
     width: auto !important;
@@ -125,29 +197,6 @@
             transform: translate(-50%, -50%);
         }
     }
-    .icon {
-        width: 24px;
-        height: 24px;
-        @include flex(center,center);
-        i {
-            font-size: 21px;
-            color: var(--Palette-Blue-Gray-300);
-        }
-        &.up {
-            i {
-                color: var(--Palette-Green-500);
-            }
-        }
-        &.down {
-            i {
-                color: var(--Palette-Red-500);
-            }
-        }
-    }
-    .number {
-        color: var(--Body-Text);
-    }
-
 }
 
 .wg-box {
@@ -160,3 +209,241 @@
     box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
 }
 
+.product-item {
+    @include flex(center,center);
+    gap: 15px;
+    .image {
+        @include flex(center,center);
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        background: #EFF4F8;
+        &.small {
+            width: 36px;
+            height: 36px;
+            padding: 4px;
+        }
+    }
+    .country {
+        img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+    .name {
+        min-width: 200px;
+        a {
+            line-height: 17px;
+            &:hover {
+                color: var(--Main);
+            }
+        }
+    }
+    .text-tiny {
+        line-height: 20px
+    }
+}
+
+.country-item {
+    @include flex(center,center);
+    gap: 10px;
+    .image {
+        img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+    }
+    .name {
+        min-width: 93px;
+        &:hover {
+            color: var(--Main);
+        }
+    }
+    .number {
+        min-width: 57px;
+        text-align: end;
+    }
+}
+
+.shop-item {
+    @include flex(center,center);
+    gap: 14px;
+    .image {
+        img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+    }
+    .name {
+        &:hover {
+            color: var(--Main);
+        }
+    }
+}
+
+.progress-level-bar {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 4px;
+    border-radius: 14px;
+    background: #EBFFF1;
+    span {
+        position: relative;
+        display: block;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 14px;
+        background: #22C55E;
+        transition-property: width;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        transition-duration: 2s;
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    &.t1 {
+        background: #FFE9E0;
+        span {
+            background: #FF5200;
+        }
+    }
+    &.t2 {
+        background: #ECF5FF;
+        span {
+            background: #CBD5E1;
+        }
+    }
+    &.t3 {
+        background: #FFFCE6;
+        span {
+            background: #ECD71F;
+        }
+    }
+    &.t4 {
+        background: #E4FFFF;
+        span {
+            background: #22C5C5;
+        }
+    }
+    &.t5 {
+        background: #F5E9FF;
+        span {
+            background: #7322C5;
+        }
+    }
+}
+
+.divider {
+    height: 1px;
+    align-self: stretch;
+    background: #EDF1F5;
+}
+
+.block-not-available {
+    @include flex(center,center);
+    height: 24px;
+    padding: 2px 8px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FFF2ED;
+    color: var(--Style);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.block-available {
+    @include flex(center,center);
+    height: 24px;
+    padding: 2px 8px;
+    gap: 10px;
+    border-radius: 4px;
+    background: #F0FDF4;
+    color: var(--22-c-55-e);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.wg-pagination {
+    @include flex(center,center);
+    flex-wrap: wrap;
+    gap: 9px;
+    li {
+        min-width: 40px;
+        text-align: center;
+        color: var(--08091-b);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        a {
+            @include flex(center,center);
+            width: 40px;
+            height: 40px;
+            gap: 10px;
+            border-radius: 50%;
+            color: var(--08091-b);
+            i {
+                font-size: 18px;
+                @include transition3;
+            }
+        }
+        &:hover,
+        &.active {
+            a {
+                background: var(--Main);
+                color: var(--White);
+            }
+            i {
+                color: var(--White);
+            }
+        }
+        &:last-child ,
+        &:first-child {
+            a {
+                border: 1px solid var(--Stroke);
+            }
+        }
+    }
+}
+
+.comment-item {
+    @include d-flex;
+    gap: 10px;
+    .image {
+        flex-shrink: 0;
+        img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+    }
+    a {
+        &:hover {
+            color: var(--Main);
+        }
+    }
+}
+
+.ratings {
+    @include d-flex;
+    gap: 2px;
+    i {
+        font-size: 10px;
+        color: var(--Icon);
+        &.active {
+            color: #FFA800;
+        }
+    }
+}
+
+.overflow-h {
+    overflow-y: scroll;
+    height: 294px;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+}

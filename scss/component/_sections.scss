@@ -5,6 +5,23 @@
     .main-content-wrap {
         padding: 30px 13px 30px 30px;
     }
+    .bottom-page {
+        @include flex(center,center);
+        padding: 24px 8px 8px 24px;
+        gap: 10px;
+        background: var(--White);
+        box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
+        i {
+            font-size: 16px;
+            color: var(--Style);
+        }
+        a {
+            color: var(--Main);
+            &:hover {
+                color: var(--Style);
+            }
+        }
+    }
 }
 
 .tf-section-1 {
@@ -31,7 +48,7 @@
     grid-template-columns: repeat(4,minmax(0,1fr));
 }
 
-.tf-section-left {
+.tf-section-5 {
     display: grid !important;
     gap: 30px 20px;
     grid-template-columns: repeat(8,minmax(0,1fr));
@@ -40,54 +57,22 @@
         &:nth-child(1) {
             grid-column: span 3 / span 3 !important;
         }
-
+        &:nth-child(3) {
+            grid-column: span 2 / span 2 !important;
+        }
     }
 }
 
-.text-tiny {
-    color: var(--Note);
-    font-size: 12px;
-    line-height: 15px;
-}
-
-.body-title {
-    color: var(--Heading);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-}
-
-.body-title-2 {
-    color: var(--Heading);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 17px;
-    span {
-        color: var(--Style)
-    }
-}
-
-.body-text {
-    color: var(--Body-Text);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.icon-more {
-    font-size: 24px;
-    color: var(--Heading);
-    cursor: pointer;
-}
-
-.view-all {
-    @include d-flex;
-    align-items: center;
-    color: var(--Note);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    i {
-        font-size: 16px;
+.tf-section-6 {
+    display: grid !important;
+    gap: 30px 20px;
+    grid-template-columns: repeat(8,minmax(0,1fr));
+    > div {
+        &:nth-child(1) {
+            grid-column: span 3 / span 3 !important;
+        }
+        &:nth-child(2) {
+            grid-column: span 5 / span 5 !important;
+        }
     }
 }

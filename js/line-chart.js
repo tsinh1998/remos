@@ -190,7 +190,6 @@
               width: 3,
               dashArray: 0,
             },
-  
             tooltip: {
               enabled: false,
               fixed: { enabled: !1 },
@@ -221,57 +220,108 @@
       };
       var chartBar5 = function () {
         var options5 = {
-            series: [
-              {
-                data: [20, 50, 7, 100, 30, 80, 100],
-              },
-            ],
-            colors: ["#22C55E"],
-            chart: {
-              type: "area",
-              maxWidth: 96,
-              height: 28,
-              sparkline: { enabled: !0 },
+          chart: {
+            height: 291,
+            type: "area",
+            zoom: {
+              enabled: false
             },
-            plotOptions: { bar: { columnWidth: "50%" } },
-            xaxis: { crosshairs: { width: 1 } },
-  
-            stroke: {
-              show: true,
-              curve: "smooth",
-              lineCap: "butt",
-              colors: undefined,
-              width: 3,
-              dashArray: 0,
-            },
-  
-            tooltip: {
-              enabled: false,
-              fixed: { enabled: !1 },
-              x: { show: !1 },
-              y: {
-                title: {
-                  formatter: function (e) {
-                    return "";
-                  },
-                },
-              },
-              marker: { show: !1 },
-            },
-            states: {
-              hover: {
-                filter: {
-                  type: "none",
-                  value: 0,
-                },
-              },
+            toolbar: {
+              show: false,
             },
           },
-          chart5 = new ApexCharts(
-            document.querySelector("#line-chart-5"),
-            options5
-          );
+          dataLabels: {
+            enabled: false
+          },
+          series: [
+            {
+              name: "$",
+              data: [45, 52, 38, 45, 19, 23, 20 ,45, 52, 38, 45, 19]
+            }
+          ],
+          fill: {
+            type: "gradient",
+            gradient: {
+              shadeIntensity: 1,
+              opacityFrom: 0.3,
+              opacityTo: 0.9,
+              stops: [0, 90, 100]
+            }
+          },
+          xaxis: {
+            categories: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+            ]
+          }
+        };
+        chart5 = new ApexCharts(
+          document.querySelector("#line-chart-5"),
+          options5
+        );
         chart5.render();
+      };
+      var chartBar6 = function () {
+        var options6 = {
+          series: [{
+          name: 'Profit',
+          data: [44, 55, 57, 56, 61, 58, 63, 60]
+        }, {
+          name: 'Revenue',
+          data: [76, 85, 101, 98, 87, 105, 91, 114]
+        }],
+          chart: {
+          type: 'bar',
+          height: 222,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '55%',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        colors: ['#2377FC33', '#2377FC'],
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ['transparent']
+        },
+        xaxis: {
+          categories: ['Jan' , 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val + " thousands"
+            }
+          }
+        }
+        };
+        chart6 = new ApexCharts(
+          document.querySelector("#line-chart-6"),
+          options6
+        );
+        chart6.render();
       };
   
       /* Function ============ */
@@ -284,6 +334,7 @@
           chartBar3();
           chartBar4();
           chartBar5();
+          chartBar6();
         },
         resize: function () {},
       };
