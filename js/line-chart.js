@@ -236,7 +236,7 @@
           series: [
             {
               name: "$",
-              data: [45, 52, 38, 45, 19, 23, 20 ,45, 52, 38, 45, 19]
+              data: [45, 52, 38, 45, 49, 43, 40 ,45, 52, 38, 45, 19]
             }
           ],
           fill: {
@@ -275,14 +275,14 @@
         var options6 = {
           series: [{
           name: 'Profit',
-          data: [44, 55, 57, 56, 61, 58, 63, 60]
+          data: [81, 121, 40, 52, 164, 113, 26, 68]
         }, {
           name: 'Revenue',
-          data: [76, 85, 101, 98, 87, 105, 91, 114]
+          data: [135, 182, 76, 112, 199, 168, 49, 120]
         }],
           chart: {
           type: 'bar',
-          height: 222,
+          height: 200,
           toolbar: {
             show: false,
           },
@@ -297,14 +297,18 @@
         dataLabels: {
           enabled: false
         },
+        legend: {
+          show: false,
+        },
         colors: ['#2377FC33', '#2377FC'],
         stroke: {
-          show: true,
-          width: 2,
-          colors: ['transparent']
+          show: false,
         },
         xaxis: {
           categories: ['Jan' , 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        },
+        yaxis: {
+          show: false,
         },
         fill: {
           opacity: 1

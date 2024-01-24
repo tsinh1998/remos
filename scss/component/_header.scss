@@ -41,6 +41,8 @@
     z-index: 19;
     .wrap {
         @include flex(center,space-between);
+        gap: 15px;
+        height: 100%;
         .header-search {
             width: 100%;
             max-width: 780px;

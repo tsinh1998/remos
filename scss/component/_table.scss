@@ -1,0 +1,161 @@
+.wg-table {
+    overflow-x: auto !important;
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    &.table-best-shop-sellers {
+        > * {
+            width: 532px;
+        }
+        ul.table-title {
+            li {
+                &:nth-child(1) {
+                    width: 170px;
+                }
+                &:nth-child(2) {
+                    width: 120px;
+                }
+                &:nth-child(3) {
+                    width: 70px;
+                }
+                &:nth-child(4) {
+                    width: 112px;
+                }
+            }
+        }
+        .shop-item {
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 120px;
+                    }
+                    &:nth-child(2) {
+                        width: 120px;
+                    }
+                    &:nth-child(3) {
+                        width: 70px;
+                    }
+                    &:nth-child(4) {
+                        width: 112px;
+                    }
+                }
+            }
+        }
+    }
+    &.table-product-overview {
+        > * {
+            width: 932px;
+        }
+        ul.table-title {
+            li {
+                &:nth-child(1) {
+                    width: 320px;
+                }
+                &:nth-child(2) {
+                    width: 80px;
+                }
+                &:nth-child(3) {
+                    width: 80px;
+                }
+                &:nth-child(4) {
+                    width: 80px;
+                }
+                &:nth-child(5) {
+                    width: 80px;
+                }
+                &:nth-child(6) {
+                    width: 80px;
+                }
+                &:nth-child(7) {
+                    width: 92px;
+                }
+            }
+        }
+        .product-item {
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 256px;
+                    }
+                    &:nth-child(2) {
+                        width: 80px;
+                    }
+                    &:nth-child(3) {
+                        width: 80px;
+                    }
+                    &:nth-child(4) {
+                        width: 80px;
+                    }
+                    &:nth-child(5) {
+                        width: 80px;
+                    }
+                    &:nth-child(6) {
+                        width: 80px;
+                    }
+                    &:nth-child(7) {
+                        width: 92px;
+                    }
+                }
+            }
+        }
+    }
+    &.table-orders {
+        > * {
+            width: 465px;
+        }
+        ul.table-title {
+            li {
+                &:nth-child(1) {
+                    width: 225px;
+                }
+                &:nth-child(2) {
+                    width: 110px;
+                }
+                &:nth-child(3) {
+                    width: 110px;
+                }
+            }
+        }
+        .product-item {
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 175px;
+                    }
+                    &:nth-child(2) {
+                        width: 110px;
+                    }
+                    &:nth-child(3) {
+                        width: 110px;
+                    }
+                }
+            }
+        }
+    }
+    &.table-top-product {
+        > * {
+            width: 532px;
+        }
+        .product-item {
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 200px;
+                    }
+                    &:nth-child(2) {
+                        width: 79px;
+                    }
+                    &:nth-child(3) {
+                        width: 20px;
+                    }
+                    &:nth-child(4) {
+                        width: 39px;
+                    }
+                }
+            }
+        }
+    }
+}
