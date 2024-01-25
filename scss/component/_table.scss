@@ -101,6 +101,39 @@
                 }
             }
         }
+        &.t1 {
+            > * {
+                width: 1532px;
+            }
+            ul.table-title {
+                li {
+                    width: 100%;
+                    &:first-child {
+                        width: 450px;
+                        flex-shrink: 0;
+                    }
+                    &:last-child {
+                        width: 92px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+            .product-item {
+                > .flex {
+                    > div {
+                        width: 100%;
+                        &:first-child {
+                            width: 386px;
+                            flex-shrink: 0;
+                        }
+                        &:last-child {
+                            width: 92px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.table-orders {
         > * {
@@ -154,6 +187,118 @@
                     &:nth-child(4) {
                         width: 39px;
                     }
+                }
+            }
+        }
+    }
+    &.table-top-selling-product {
+        > * {
+            width: 732px;
+        }
+        ul.table-title {
+            li {
+                &:nth-child(1) {
+                    width: 330px;
+                }
+                &:nth-child(2) {
+                    width: 126px;
+                }
+                &:nth-child(3) {
+                    width: 126px;
+                }
+                &:nth-child(4) {
+                    width: 90px;
+                }
+            }
+        }
+        .product-item {
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 266px;
+                    }
+                    &:nth-child(2) {
+                        width: 126px;
+                    }
+                    &:nth-child(3) {
+                        width: 126px;
+                    }
+                    &:nth-child(4) {
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+    &.table-orders-1 {
+        overflow-y: auto !important;
+        height: 383px;
+        > * {
+            width: 732px;
+        }
+        ul.table-title {
+            li {
+                &:nth-child(1) {
+                    width: 342px;
+                }
+                &:nth-child(2) {
+                    width: 120px;
+                }
+                &:nth-child(3) {
+                    width: 120px;
+                }
+                &:nth-child(4) {
+                    width: 120px;
+                }
+            }
+        }
+        .product-item {
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 278px;
+                    }
+                    &:nth-child(2) {
+                        width: 120px;
+                    }
+                    &:nth-child(3) {
+                        width: 120px;
+                    }
+                    &:nth-child(4) {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+    &.table-customers {
+        > * {
+            width: 998px;
+        }
+        ul.table-title {
+            li {
+                width: 100%;
+                &:last-child {
+                    width: 124px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .item {
+            .body-text {
+                color: var(--Heading);
+            }
+            > div {
+                width: 100%;
+                &:last-child {
+                    width: 124px;
+                    flex-shrink: 0;
                 }
             }
         }

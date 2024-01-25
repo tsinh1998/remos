@@ -30,7 +30,6 @@
             },
   
             tooltip: {
-              enabled: false,
               fixed: { enabled: !1 },
               x: { show: !1 },
               y: {
@@ -55,7 +54,9 @@
             document.querySelector("#line-chart-1"),
             options1
           );
-        chart1.render();
+        if ($("#line-chart-1").length > 0) {
+          chart1.render();
+        }
       };
       var chartBar2 = function () {
         var options2 = {
@@ -84,7 +85,6 @@
             },
   
             tooltip: {
-              enabled: false,
               fixed: { enabled: !1 },
               x: { show: !1 },
               y: {
@@ -109,7 +109,9 @@
             document.querySelector("#line-chart-2"),
             options2
           );
-        chart2.render();
+        if ($("#line-chart-2").length > 0) {
+          chart2.render();
+        }
       };
       var chartBar3 = function () {
         var options3 = {
@@ -138,7 +140,6 @@
             },
   
             tooltip: {
-              enabled: false,
               fixed: { enabled: !1 },
               x: { show: !1 },
               y: {
@@ -163,7 +164,9 @@
             document.querySelector("#line-chart-3"),
             options3
           );
-        chart3.render();
+        if ($("#line-chart-3").length > 0) {
+          chart3.render();
+        }
       };
       var chartBar4 = function () {
         var options4 = {
@@ -191,7 +194,6 @@
               dashArray: 0,
             },
             tooltip: {
-              enabled: false,
               fixed: { enabled: !1 },
               x: { show: !1 },
               y: {
@@ -216,7 +218,9 @@
             document.querySelector("#line-chart-4"),
             options4
           );
-        chart4.render();
+        if ($("#line-chart-4").length > 0) {
+          chart4.render();
+        }
       };
       var chartBar5 = function () {
         var options5 = {
@@ -269,7 +273,9 @@
           document.querySelector("#line-chart-5"),
           options5
         );
-        chart5.render();
+        if ($("#line-chart-5").length > 0) {
+          chart5.render();
+        }
       };
       var chartBar6 = function () {
         var options6 = {
@@ -325,7 +331,55 @@
           document.querySelector("#line-chart-6"),
           options6
         );
-        chart6.render();
+        if ($("#line-chart-6").length > 0) {
+          chart6.render();
+        }
+      };
+      var chartBar7 = function () {
+        var options7 = {
+          series: [{
+          name: 'Website',
+          data: [51, 40, 58, 51, 42, 89, 80, 51, 60, 78, 81, 92]
+        }, {
+          name: 'E-commerce',
+          data: [31, 32, 45, 32, 34, 52, 41, 31, 40, 28, 51, 42]
+        }, {
+          name: 'Store',
+          data: [21, 22, 35, 22, 24, 42, 31, 21, 30, 18, 41, 30]
+        }],
+          chart: {
+          height: 483,
+          type: 'area',
+          toolbar: {
+            show: false,
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: ['#8F77F3', '#FF5200', '#2377FC'],
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy'
+          },
+        },
+        };
+        chart7 = new ApexCharts(
+          document.querySelector("#line-chart-7"),
+          options7
+        );
+        if ($("#line-chart-7").length > 0) {
+          chart7.render();
+        }
       };
   
       /* Function ============ */
@@ -339,6 +393,7 @@
           chartBar4();
           chartBar5();
           chartBar6();
+          chartBar7();
         },
         resize: function () {},
       };

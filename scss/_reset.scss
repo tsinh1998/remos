@@ -683,6 +683,9 @@ h6,.h6 {
 .gap20 {
     gap: 20px !important;
 }
+.gap34 {
+    gap: 34px !important;
+}
 .gap40 {
     gap: 40px !important;
 }
@@ -724,6 +727,9 @@ h6,.h6 {
 }
 .mb-20 {
     margin-bottom: 20px !important;
+}
+.mb-22 {
+    margin-bottom: 22px !important;
 }
 .mb-30 {
     margin-bottom: 30px !important;
@@ -781,7 +787,7 @@ a {
     @include transition3;
     &:hover,
     &:focus {
-        color             : var(--primary);
+        color             : var(--Main);
         text-decoration   : none;
         outline           : 0;
         @include transition3;
