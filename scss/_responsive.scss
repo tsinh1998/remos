@@ -64,6 +64,27 @@
             }
         }
     }
+    .tf-section-2 {
+        > div {
+            grid-column: span 2 / span 2 !important;
+        }
+    }
+    .tf-section-7 {
+        > div {
+            &:nth-child(2),
+            &:nth-child(1) {
+                grid-column: span 3 / span 3 !important;
+            }
+        }
+    }
+    .tf-section-6 {
+        > div {
+            &:nth-child(2),
+            &:nth-child(1) {
+                grid-column: span 8 / span 8 !important;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {

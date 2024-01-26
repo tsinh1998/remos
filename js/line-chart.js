@@ -296,7 +296,7 @@
         plotOptions: {
           bar: {
             horizontal: false,
-            columnWidth: '55%',
+            columnWidth: '10px',
             endingShape: 'rounded'
           },
         },
@@ -369,7 +369,7 @@
         },
         tooltip: {
           x: {
-            format: 'dd/MM/yy'
+            format: 'dd/mm/yy'
           },
         },
         };
@@ -379,6 +379,65 @@
         );
         if ($("#line-chart-7").length > 0) {
           chart7.render();
+        }
+      };
+      var chartBar8 = function () {
+        var options8 = {
+          series: [{
+          name: 'Profit',
+          data: [81, 121, 40, 52, 164, 113, 26, 68, 164, 113,]
+        }, {
+          name: 'Revenue',
+          data: [135, 182, 76, 112, 199, 168, 49, 120, 164, 113,]
+        }],
+          chart: {
+          type: 'bar',
+          height: 470,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '10px',
+            borderRadius: '12px' ,
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: ['#2377FC33', '#2377FC'],
+        stroke: {
+          show: false,
+        },
+        xaxis: {
+          categories: ['Jan' , 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val + " thousands"
+            }
+          }
+        }
+        };
+        chart8 = new ApexCharts(
+          document.querySelector("#line-chart-8"),
+          options8
+        );
+        if ($("#line-chart-8").length > 0) {
+          chart8.render();
         }
       };
   
@@ -394,6 +453,7 @@
           chartBar5();
           chartBar6();
           chartBar7();
+          chartBar8();
         },
         resize: function () {},
       };

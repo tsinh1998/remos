@@ -134,6 +134,39 @@
                 }
             }
         }
+        &.t2 {
+            > * {
+                width: 1532px;
+            }
+            ul.table-title {
+                li {
+                    width: 100%;
+                    &:first-child {
+                        width: 480px;
+                        flex-shrink: 0;
+                    }
+                    &:last-child {
+                        width: 170px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+            .product-item {
+                > .flex {
+                    > div {
+                        width: 100%;
+                        &:first-child {
+                            width: 416px;
+                            flex-shrink: 0;
+                        }
+                        &:last-child {
+                            width: 170px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.table-orders {
         > * {
