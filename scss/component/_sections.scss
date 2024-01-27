@@ -111,27 +111,6 @@
     cursor: pointer;
 }
 
-.dark-theme {
-    --White: #1E293B;
-    --Heading : #FFF;
-    --Input :#324055;
-    --Body-Text: #94A3B8;
-    --Note : #94A3B8;
-
-    #logo_header_mobile {
-        display: inline;
-    }
-    #logo_header {
-        display: none;
-    }
-    .main-content {
-        background-color: #0F172A;
-    }
-    .divider {
-        background: #283548;
-    }
-}
-
 // jvectormap
 .jvectormap-label {
     position: absolute;

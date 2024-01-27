@@ -410,6 +410,8 @@
         &:first-child {
             a {
                 border: 1px solid var(--Stroke);
+                width: 42px;
+                height: 42px;
             }
         }
     }
@@ -461,6 +463,7 @@
     .dot {
         width: 10px;
         height: 10px;
+        flex-shrink: 0;
         border-radius: 50%;
         &.t1 {
             background-color: var(--Main);
@@ -511,6 +514,93 @@
         background: var(--Main);
         &.line-2 {
             background: #D3E4FE;
+        }
+    }
+}
+
+.rating-number {
+    @include d-flex;
+    align-items: center;
+    gap: 6px;
+    .icon {
+        i {
+            font-size: 14px;
+            color: #FFC107;
+        }
+    }
+    .number {
+        color: var(--Body-Text);
+    }
+}
+
+.breadcrumbs {
+    a {
+        .text-tiny {
+            color: var(--Body-Text);
+        }
+    }
+    i {
+        font-size: 14px;
+        color: var(--Body-Text);
+    }
+}
+
+.upload-image {
+    @include d-flex;
+    gap: 10px;
+    .item {
+        @include flex(center,center);
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid var(--Input);
+        img {
+            height: 206px;
+        }
+        &.up-load {
+            min-height: 208px;
+            border: 1px dashed var(--Main);
+        }
+    }
+    .uploadfile {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+        @include flex(center,center);
+        gap: 10px;
+        flex-direction: column;
+        .icon {
+            font-size: 40px;
+            color: var(--Main);
+        }
+        .text-tiny {
+            width: 100%;
+            max-width: 177px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+.list-box-value {
+    @include d-flex;
+    gap: 10px;
+    .box-value-item {
+        width: 100%;
+        @include flex(center,center);
+        padding: 9px;
+        border-radius: 8px;
+        border: 1px solid var(--Input);
+        background: transparent;
+        text-align: center;
+        .body-text {
+            color: var(--Heading)
         }
     }
 }

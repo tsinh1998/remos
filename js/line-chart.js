@@ -440,6 +440,93 @@
           chart8.render();
         }
       };
+      var chartBar9 = function () {
+        var options9 = {
+          series: [90, 35, 41],
+          chart: {
+          type: 'donut',
+          height: 323,
+        },
+        plotOptions: {
+          pie: {
+            startAngle: -100,
+            endAngle: 100,
+            offsetY: 0
+          }
+        },
+        grid: {
+          padding: {
+            bottom: -80
+          }
+        },
+        legend: {
+          show: false,
+        }
+        };
+        chart9 = new ApexCharts(
+          document.querySelector("#line-chart-9"),
+          options9
+        );
+        if ($("#line-chart-9").length > 0) {
+          chart9.render();
+        }
+      };
+      var chartBar10 = function () {
+        var options10 = {
+          series: [{
+          name: 'Revenue',
+          data: [135, 182, 76, 112, 199, 168, 49, 120, 164, 113]
+        }],
+          chart: {
+          type: 'bar',
+          height: 280,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '10px',
+            borderRadius: '12px' ,
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors:  '#2377FC',
+        stroke: {
+          show: false,
+        },
+        xaxis: {
+          categories: ['Jan' , 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val + " thousands"
+            }
+          }
+        }
+        };
+        chart10 = new ApexCharts(
+          document.querySelector("#line-chart-10"),
+          options10
+        );
+        if ($("#line-chart-10").length > 0) {
+          chart10.render();
+        }
+      };
   
       /* Function ============ */
       return {
@@ -454,6 +541,8 @@
           chartBar6();
           chartBar7();
           chartBar8();
+          chartBar9();
+          chartBar10();
         },
         resize: function () {},
       };

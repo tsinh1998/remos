@@ -336,4 +336,39 @@
             }
         }
     }
+    &.table-top-product-1 {
+        > * {
+            width: 465px;
+        }
+        ul.table-title {
+            li {
+                width: 72px;
+                &:first-child {
+                    width: 219px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .product-item {
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    &:nth-child(1) {
+                        width: 169px;
+                    }
+                    &:nth-child(2) {
+                        width: 72px;
+                    }
+                    &:nth-child(3) {
+                        width: 72px;
+                    }
+                    &:nth-child(4) {
+                        width: 72px;
+                    }
+                }
+            }
+        }
+    }
 }

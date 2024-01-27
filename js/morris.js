@@ -6,10 +6,13 @@
 
   MorrisCharts.prototype.createDonutChart = function(element, data, colors) {
     Morris.Donut({
-    element: element,
-    data: data,
-    resize: true,
-    colors: colors
+      element: element,
+      data: data,
+      resize: true,
+      colors: colors,
+      formatter : function (y, data) { 
+        return '$' + y 
+      }
     });
   },
   
