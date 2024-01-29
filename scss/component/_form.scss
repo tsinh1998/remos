@@ -13,6 +13,28 @@ form {
             }
         }
     }
+    &.form-style-1 {
+        @include d-flex;
+        flex-direction: column;
+        gap: 24px;
+        > * {
+            @include flex(center,start);
+            gap: 10px;
+            > * {
+                &:first-child {
+                    width: 100%;
+                    max-width: 300px;
+                }
+            }
+        }
+        .upload-image {
+            .item {
+                &.up-load {
+                    min-height: 250px;
+                }
+            }
+        }
+    }
     textarea,
     input[type="text"],
     input[type="password"],

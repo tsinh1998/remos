@@ -135,7 +135,16 @@
 }
 
 @media (max-width: 767px) {
-
+    .form-style-1 {
+        > * {
+            flex-wrap: wrap;
+            > * {
+                &:last-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -156,6 +165,9 @@
         }
     }
     .upload-image {
+        flex-wrap: wrap;
+    }
+    .wg-filter {
         flex-wrap: wrap;
     }
 }

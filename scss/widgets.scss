@@ -206,6 +206,15 @@
     box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
 }
 
+.title-box {
+    @include flex(center,start);
+    gap: 10px;
+    i {
+        font-size: 18px;
+        color: var(--Main);
+    }
+}
+
 .product-item {
     @include flex(center,center);
     gap: 15px;
@@ -350,6 +359,7 @@
 
 .block-not-available {
     @include flex(center,center);
+    width: max-content;
     height: 24px;
     padding: 2px 8px;
     gap: 10px;
@@ -601,6 +611,41 @@
         text-align: center;
         .body-text {
             color: var(--Heading)
+        }
+    }
+}
+
+.wg-filter {
+    @include flex(center,start);
+    gap: 10px 30px;
+    .show {
+        @include flex(center,center);
+        gap: 10px;
+        select {
+            width: 72px;
+            padding: 6px 16px;
+        }
+    }
+    form {
+        width: 100%;
+        max-width: 458px;
+    }
+}
+
+.list-icon-function {
+    @include flex(center,start);
+    gap: 20px;
+    .item {
+        font-size: 20px;
+        cursor: pointer;
+        &.eye {
+            color: var(--Main);
+        }
+        &.edit {
+            color: #22C55E;
+        }
+        &.trash {
+            color: var(--Style);
         }
     }
 }

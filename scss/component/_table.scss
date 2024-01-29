@@ -371,4 +371,102 @@
             }
         }
     }
+    &.table-product-list {
+        > * {
+            width: 1532px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:first-child {
+                    width: 430px;
+                    flex-shrink: 0;
+                }
+                &:nth-child(5),
+                &:nth-child(4) {
+                    width: 90px;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    width: 110px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .product-item {
+            padding: 12px;
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    width: 100%;
+                    &:first-child {
+                        width: 366px;
+                        flex-shrink: 0;
+                    }
+                    &:nth-child(5),
+                    &:nth-child(4) {
+                        width: 90px;
+                        flex-shrink: 0;
+                    }
+                    &:last-child {
+                        width: 110px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: rgba(246, 248, 251, 0.8);
+            }
+        }
+    }
+    &.table-all-category {
+        > * {
+            width: 1532px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:first-child {
+                    width: 430px;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    width: 110px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .product-item {
+            padding: 12px;
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    width: 100%;
+                    &:first-child {
+                        width: 366px;
+                        flex-shrink: 0;
+                    }
+                    &:last-child {
+                        width: 110px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: rgba(246, 248, 251, 0.8);
+            }
+        }
+    }
 }
