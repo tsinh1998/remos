@@ -469,4 +469,326 @@
             }
         }
     }
+    &.table-all-attribute {
+        > * {
+            min-width: 600px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:last-child {
+                    width: 130px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .attribute-item {
+            padding: 12px;
+            .body-text {
+                color: var(--Heading);
+            }
+            > div {
+                width: 100%;
+                &:last-child {
+                    width: 130px;
+                    flex-shrink: 0;
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: #F7FAFC;
+            }
+        }
+    }
+    &.table-order-detail {
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+        }
+        .product-item {
+            padding: 12px;
+            .text-tiny {
+                color: var(--Body-Text);
+            }
+            > .flex {
+                > div {
+                    width: 100%;
+                    &:first-child {
+                        max-width: 269px;
+                    }
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: #F7FAFC;
+            }
+        }
+    }
+    &.table-cart-totals {
+        > * {
+            &:last-child {
+                padding: 0 12px;
+            }
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                &:first-child {
+                    width: 69.1%;
+                }
+                &:last-child {
+                    flex-grow: 1;
+                }
+            }
+        }
+        .cart-totals-item {
+            @include d-flex;
+            > div {
+                &:first-child {
+                    width: 69.1%;
+                }
+                &:last-child {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+    &.table-order-track {
+        > * {
+            width: 1532px;
+            &:last-child {
+                padding: 0 12px;
+            }
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:nth-child(1) {
+                    width: 314px;
+                }
+                &:nth-child(2) {
+                    width: 314px;
+                }
+                &:nth-child(3) {
+                    width: 368px;
+                }
+                &:nth-child(4) {
+                    width: 452px;
+                }
+            }
+        }
+        .cart-totals-item {
+            @include d-flex;
+            gap: 20px;
+            > div {
+                width: 100%;
+                &:nth-child(1) {
+                    width: 314px;
+                }
+                &:nth-child(2) {
+                    width: 314px;
+                }
+                &:nth-child(3) {
+                    width: 368px;
+                }
+                &:nth-child(4) {
+                    width: 452px;
+                }
+            }
+        }
+    }
+    &.table-all-user {
+        > * {
+            width: 1532px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:last-child {
+                    width: 110px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .user-item {
+            padding: 12px;
+            .body-text {
+                color: var(--Heading);
+            }
+            > .flex {
+                > div {
+                    width: 100%;
+                    &:first-child {
+                        width: 382px;
+                        flex-shrink: 0;
+                    }
+                    &:last-child {
+                        width: 110px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: rgba(246, 248, 251, 0.8);
+            }
+        }
+    }
+    &.table-all-roles {
+        > * {
+            width: 1532px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:first-child {
+                    width: 86px;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    width: 80px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .roles-item {
+            @include d-flex;
+            align-items: center;
+            gap: 20px;
+            padding: 21px 12px;
+            border-radius: 12px;
+            .body-text {
+                color: var(--Heading);
+            }
+            > div {
+                width: 100%;
+                &:first-child {
+                    width: 86px;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    width: 80px;
+                    flex-shrink: 0;
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: #F7FAFC;
+            }
+        }
+    }
+    &.table-create-role {
+        > * {
+            width: 1532px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+            }
+        }
+        .item {
+            @include d-flex;
+            align-items: center;
+            gap: 20px;
+            padding: 21px 12px;
+            border-radius: 12px;
+            input {
+                width: 22px;
+                height: 22px;
+                border-radius: 6px;
+                border: 1px solid #DADFE3;
+            }
+            > div {
+                width: 100%;
+                &:first-child {
+                    width: 190px;
+                    flex-shrink: 0;
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: #F7FAFC;
+            }
+        }
+    }
+    &.table-countries {
+        > * {
+            width: 1532px;
+        }
+        ul.table-title {
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(246, 248, 251, 0.80);
+            li {
+                width: 100%;
+                &:nth-child(1) {
+                    width: 22px;
+                    flex-shrink: 0;
+                }
+                &:nth-child(2) {
+                    width: 86px;
+                    flex-shrink: 0;
+                }
+                &:nth-child(3) {
+                    width: 290px;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    width: 80px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+        .countries-item {
+            @include d-flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 12px;
+            border-radius: 12px;
+            .body-text {
+                color: var(--Heading);
+            }
+            > div {
+                width: 100%;
+                &:nth-child(1) {
+                    width: 22px;
+                    flex-shrink: 0;
+                }
+                &:nth-child(2) {
+                    width: 86px;
+                    flex-shrink: 0;
+                }
+                &:nth-child(3) {
+                    width: 290px;
+                    flex-shrink: 0;
+                }
+                &:last-child {
+                    width: 80px;
+                    flex-shrink: 0;
+                }
+            }
+            &:nth-child(2n+1) {
+                border-radius: 12px;
+                background: #F7FAFC;
+            }
+        }
+    }
 }

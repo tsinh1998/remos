@@ -137,6 +137,47 @@
       }
   };  
 
+  var fullcheckbox = function () {
+    $('.total-checkbox').on('click', function () {
+      if ( $(this).is(':checked') ) {
+        $(this).closest('.wrap-checkbox').find('.checkbox-item').prop('checked', true);
+      } else {
+        $(this).closest('.wrap-checkbox').find('.checkbox-item').prop('checked', false);
+      }
+    });
+  };
+
+  var showpass = function() {
+    $(".show-pass").on("click", function () {
+      $(this).toggleClass("active");
+      var input = $(this).parents(".password").find(".password-input");
+
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
+      } else if (input.attr("type") == "text") {
+        input.attr("type", "password");
+      }
+    });
+  }
+
+  var gallery = function() {
+    $(".button-list-style").on("click", function () {
+      $(".wrap-gallery-item").addClass("list");
+    });
+    $(".button-grid-style").on("click", function () {
+      $(".wrap-gallery-item").removeClass("list");
+    });
+  }
+
+  var coppy = function() {
+    $(".button-coppy").on("click", function () {
+      myFunction()
+    });
+    function myFunction() {
+      var copyText = document.getElementsByClassName("coppy-content");
+      navigator.clipboard.writeText(copyText.text);
+    }
+  }
 
 
   // Dom Ready
@@ -148,6 +189,10 @@
     collapse_menu();
     toggleTheme();
     retinaLogos();
+    fullcheckbox();
+    showpass();
+    gallery();
+    coppy();
     
   });
 

@@ -142,7 +142,6 @@ html {
 }
 
 body {
-    background : var(--Bg);
     line-height: 1;
     padding: 0 !important;
 }
@@ -485,10 +484,9 @@ input[type="submit"] {
 input[type="checkbox"],
 input[type="radio"] {
     padding : 0;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 6px;
-    border: 1px solid var(--secondary);
     background: rgba(0, 0, 0, 0) !important;
     cursor : pointer;
     vertical-align: sub;
@@ -556,6 +554,7 @@ h5,.h5,
 h6,.h6 {
     font-family   : $font-main-family;
     color         : var(--Heading);
+    margin        : 0;
     font-weight   : 700;
     text-rendering: optimizeLegibility;
 }
@@ -686,6 +685,9 @@ h6,.h6 {
 .gap22 {
     gap: 22px !important;
 }
+.gap24 {
+    gap: 24px !important;
+}
 .gap30 {
     gap: 30px !important;
 }
@@ -703,6 +705,9 @@ h6,.h6 {
 }
 .mt-4 {
     margin-top: 4px !important;
+}
+.mb-1 {
+    margin-bottom: 1px !important;
 }
 .mb-2 {
     margin-bottom: 2px !important;
@@ -739,6 +744,9 @@ h6,.h6 {
 }
 .mb-22 {
     margin-bottom: 22px !important;
+}
+.mb-24 {
+    margin-bottom: 24px !important;
 }
 .mb-27 {
     margin-bottom: 27px !important;
@@ -781,6 +789,9 @@ h6,.h6 {
 }
 .tf-color-1 {
     color: var(--Style) !important;
+}
+.tf-color-2 {
+    color: var(--22-c-55-e) !important;
 }
 .auto-slide {
     .swiper-wrapper {

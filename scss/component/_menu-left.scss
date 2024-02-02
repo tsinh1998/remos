@@ -160,6 +160,12 @@
                             }
                         }
                     }
+                    &:not(.has-children) {
+                        &.active {
+                            background-color: #E9F2FF;
+                            border-radius: 12px;
+                        }
+                    }
                 }
             }
         }
