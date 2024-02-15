@@ -18,6 +18,9 @@
     &:hover {
         color: var(--Main);    
         background-color: var(--White);
+        span {
+            color: var(--White) !important;     
+        }
     }
     i {
         font-size: 20px;
@@ -66,5 +69,18 @@
     }
     div {
         color: var(--Body-Text);
+    }
+}
+
+.tf-button-download {
+    @include flex(center,center);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--Input);
+    border-radius: 12px;
+    cursor: pointer;
+    i {
+        color: #000000;
+        font-size: 20px;
     }
 }

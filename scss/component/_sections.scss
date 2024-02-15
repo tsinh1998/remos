@@ -110,6 +110,20 @@
     }
 }
 
+.tf-section-8 {
+    display: grid !important;
+    gap: 30px 20px;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    > div {
+        &:nth-child(1) {
+            grid-column: span 1 / span 1 !important;
+        }
+        &:nth-child(2) {
+            grid-column: span 3 / span 3 !important;
+        }
+    }
+}
+
 .button-zoom-maximize,
 .button-dark-light {
     cursor: pointer;
@@ -182,4 +196,28 @@
     overflow: hidden;
 }
 
-// morris
+.wrap-login-page {
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    text-align: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    @include d-flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    .login-box {
+        @include d-flex;
+        flex-direction: column;
+        background-color: var(--White);
+        border-radius: 20px;
+        padding: 30px;
+        gap: 40px;
+        text-align: start;
+    }
+    &.sign-up {
+        padding-top: 54px;
+        gap: 52px;
+    }
+}

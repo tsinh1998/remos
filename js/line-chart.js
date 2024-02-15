@@ -1,5 +1,4 @@
 (function ($) {
-    /* "use strict" */
   
     var tfLineChart = (function () {
   
@@ -401,7 +400,6 @@
           bar: {
             horizontal: false,
             columnWidth: '10px',
-            borderRadius: '12px' ,
             endingShape: 'rounded'
           },
         },
@@ -488,7 +486,6 @@
           bar: {
             horizontal: false,
             columnWidth: '10px',
-            borderRadius: '12px' ,
             endingShape: 'rounded'
           },
         },
@@ -527,6 +524,392 @@
           chart10.render();
         }
       };
+      var chartBar11 = function () {
+        var options11 = {
+          series: [{
+          name: 'Price',
+          data: [
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120
+          ]
+        }],
+          chart: {
+          type: 'bar',
+          height: 200,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '3px',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: '#BFDBFE',
+        stroke: {
+          show: false,
+        },
+        xaxis: {
+          labels: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          tooltip: {
+            enabled: false
+          }
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val
+            }
+          }
+        }
+        };
+        chart11 = new ApexCharts(
+          document.querySelector("#line-chart-11"),
+          options11
+        );
+        if ($("#line-chart-11").length > 0) {
+          chart11.render();
+        }
+      };
+      var chartBar12 = function () {
+        var options12 = {
+          series: [{
+          name: 'Price',
+          data: [
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120
+          ]
+        }],
+          chart: {
+          type: 'bar',
+          height: 200,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '3px',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: '#FFD4B1',
+        stroke: {
+          show: false,
+        },
+        xaxis: {
+          labels: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          tooltip: {
+            enabled: false
+          }
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val
+            }
+          }
+        }
+        };
+        chart12 = new ApexCharts(
+          document.querySelector("#line-chart-12"),
+          options12
+        );
+        if ($("#line-chart-12").length > 0) {
+          chart12.render();
+        }
+      };
+      var chartBar13 = function () {
+        var options13 = {
+          series: [{
+          name: 'Price',
+          data: [
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120
+          ]
+        }],
+          chart: {
+          type: 'bar',
+          height: 200,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '3px',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: '#B8E1C7',
+        stroke: {
+          show: false,
+        },
+        xaxis: {
+          labels: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          tooltip: {
+            enabled: false
+          }
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val
+            }
+          }
+        }
+        };
+        chart13 = new ApexCharts(
+          document.querySelector("#line-chart-13"),
+          options13
+        );
+        if ($("#line-chart-13").length > 0) {
+          chart13.render();
+        }
+      };
+      var chartBar14 = function () {
+        var options14 = {
+          series: [{
+          name: 'PRODUCT A',
+          data: [44, 55, 41, 67, 22, 43,44, 55, 41, 67, 22]
+        }, {
+          name: 'PRODUCT B',
+          data: [13, 23, 20, 8, 13, 27,44, 55, 41, 67, 22]
+        }],
+          chart: {
+          type: 'bar',
+          height: 470,
+          stacked: true,
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            borderRadius: 10,
+            columnWidth: '40px',
+            dataLabels: {
+              total: {
+                enabled: true,
+                style: {
+                  fontSize: '13px',
+                  fontWeight: 900
+                }
+              }
+            }
+          },
+        },
+        yaxis: {
+          show: false,
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: ['#2377FC', '#D3E4FE'],
+        xaxis: {
+          categories: ['Jan' , 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Nov'],
+        },
+        fill: {
+          opacity: 1
+        }
+        };
+        chart14 = new ApexCharts(
+          document.querySelector("#line-chart-14"),
+          options14
+        );
+        if ($("#line-chart-14").length > 0) {
+          chart14.render();
+        }
+      };
+      var chartBar15 = function () {
+        var options15 = {
+          series: [{
+          name: 'Item 01',
+          data: [51, 40, 58, 51, 42, 89, 80, 51, 60, 78, 81, 92]
+        }, {
+          name: 'Item 02',
+          data: [31, 32, 45, 32, 34, 52, 41, 31, 40, 28, 51, 42]
+        }, {
+          name: 'Item 03',
+          data: [21, 22, 35, 22, 24, 42, 31, 21, 30, 18, 41, 30]
+        }],
+          chart: {
+          height: 160,
+          type: 'line',
+          toolbar: {
+            show: false,
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: ['#FB923C', '#93C5FD', '#F87171'],
+        stroke: {
+          curve: 'smooth',
+          width: 1,
+        },
+        yaxis: {
+          show: false,
+        },
+        xaxis: {
+          categories: ["12:00", "12:00","13:00", "13:00","14:00", "14:00","15:00", "15:00","16:00", "16:00","17:00", "17:00" ]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/mm/yy'
+          },
+        },
+        };
+        chart15 = new ApexCharts(
+          document.querySelector("#line-chart-15"),
+          options15
+        );
+        if ($("#line-chart-15").length > 0) {
+          chart15.render();
+        }
+      };
+      var chartBar16 = function () {
+        var options16 = {
+          series: [{
+          name: 'Item 01',
+          data: [
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120,
+            81, 121, 40, 52, 164, 113, 26, 68,135, 182, 76, 112, 199, 168, 49, 120
+          ]
+        }],
+          chart: {
+          height: 160,
+          type: 'bar',
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '11px',
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false,
+        },
+        colors: '#E2E8F0',
+        stroke: {
+          show: false,
+        },
+        yaxis: {
+          show: false,
+        },
+        // xaxis: {
+        //   categories: ["12:00", "12:00","13:00", "13:00","14:00", "14:00","15:00", "15:00","16:00", "16:00","17:00", "17:00" ],
+        // },
+        xaxis: {
+          labels: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          tooltip: {
+            enabled: false
+          }
+        },
+        tooltip: {
+          x: {
+            format: 'dd/mm/yy'
+          },
+        },
+        };
+        chart16 = new ApexCharts(
+          document.querySelector("#line-chart-16"),
+          options16
+        );
+        if ($("#line-chart-16").length > 0) {
+          chart16.render();
+        }
+      };
   
       /* Function ============ */
       return {
@@ -543,6 +926,12 @@
           chartBar8();
           chartBar9();
           chartBar10();
+          chartBar11();
+          chartBar12();
+          chartBar13();
+          chartBar14();
+          chartBar15();
+          chartBar16();
         },
         resize: function () {},
       };

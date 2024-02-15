@@ -193,6 +193,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        svg {
+            width: 52px;
+            height: 52px;
+        }
+        &.type-white {
+            i {
+                color: var(--White);
+            }
+        }
+    }
+    &.style-1 {
+        flex-direction: row;
     }
 }
 
@@ -422,6 +434,30 @@
     font-weight: 500;
 }
 
+.block-warning {
+    @include flex(center,start);
+    width: max-content;
+    padding: 13px 15px;
+    gap: 10px;
+    border-radius: 12px;
+    background: #FFF2ED;
+    color: var(--Style);
+    i {
+        font-size: 24px;
+    }
+    div {
+        color: var(--Style);
+    }
+    &.type-main {
+        background-color: #EAF4FF;
+        color: var(--Main);
+        div {
+            color: var(--Main);
+            word-break: break-all;
+        }
+    }
+}
+
 .wg-pagination {
     @include flex(center,center);
     flex-wrap: wrap;
@@ -633,6 +669,30 @@
             position: absolute;
             opacity: 0;
             visibility: hidden;
+        }
+    }
+    &.style-1 {
+        flex-wrap: wrap;
+        .item {
+            width: 48%;
+            img {
+                height: 132px;
+            }
+            &.up-load {
+                min-height: 134px;
+                padding: 0 30px;
+            }
+        }
+    }
+    &.style-2 {
+        .item {
+            img {
+                height: 218px;
+            }
+            &.up-load {
+                min-height: 220px;
+                padding: 0 30px;
+            }
         }
     }
 }
@@ -935,5 +995,88 @@
     }
     .coppy-content {
         word-break: break-word;
+    }
+}
+
+.new-page-wrap {
+    @include d-flex;
+    gap: 20px;
+    .left {
+        width: 100%;
+        @include d-flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .right {
+        width: 100%;
+        max-width: 410px;
+        @include d-flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+.add-more-right {
+    position: relative;
+    > a {
+        &.add-more {
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            height: 38px;
+        }
+    }
+}
+
+.wg-goal {
+    position: relative;
+    padding: 24px;
+    @include d-flex;
+    gap: 10px;
+    align-items: center;
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 14px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(90deg,#0040A6,#0040A6CC,#2377FCCC);
+        }
+    }
+    .left {
+        position: relative;
+        width: 100%;
+        min-width: 194px;
+        h5,
+        .body-text,
+        .body-title {
+            color: var(--White);
+        }
+        a {
+            @include d-flex;
+            align-items: center;
+            gap: 6px;
+            i {
+                font-size: 12px;
+                color: var(--White);
+            }
+        }
+    }
+    .right {
+        position: relative;
     }
 }

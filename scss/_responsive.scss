@@ -101,6 +101,11 @@
             }
         }
     }
+    .form-style-2 { 
+        .left {
+            max-width: 150px !important;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -183,6 +188,11 @@
             }
         }
     }
+    .form-style-2 { 
+        .left {
+            max-width: unset !important;
+        }
+    } 
 }
 
 @media (max-width: 600px) {
@@ -211,5 +221,13 @@
                 display: none;
             }
         }
+    }
+    .mobile-wrap {
+        flex-wrap: wrap;
+    }
+    .wrap-login-page {
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }

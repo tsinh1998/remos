@@ -142,6 +142,7 @@ html {
 }
 
 body {
+    background: #F2F7FB;
     line-height: 1;
     padding: 0 !important;
 }
@@ -757,6 +758,9 @@ h6,.h6 {
 .mb-40 {
     margin-bottom: 40px !important;
 }
+.mb-50 {
+    margin-bottom: 50px !important;
+}
 .pb-40 {
     padding-bottom: 40px;
 }
@@ -771,6 +775,9 @@ h6,.h6 {
 }
 .w-half {
     width: 50% !important;
+}
+.w-max {
+    width: max-content !important;
 }
 .h-full {
     height: 100%;
@@ -792,6 +799,9 @@ h6,.h6 {
 }
 .tf-color-2 {
     color: var(--22-c-55-e) !important;
+}
+.tf-color-3 {
+    color: var(--Heading) !important;
 }
 .auto-slide {
     .swiper-wrapper {
