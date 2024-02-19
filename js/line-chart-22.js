@@ -6,21 +6,17 @@
       
         var options = {
             series: [{
-            name: 'Revenue',
-            data: [135, 182, 76, 112, 199, 168, 49]
+            name: 'Website',
+            data: [51, 40, 58, 51, 42, 89, 80, 51, 60, 78, 81, 92]
+          }, {
+            name: 'E-commerce',
+            data: [31, 32, 45, 32, 34, 52, 41, 31, 40, 28, 51, 42]
           }],
             chart: {
-            type: 'bar',
-            height: 320,
+            height: 373,
+            type: 'area',
             toolbar: {
               show: false,
-            },
-          },
-          plotOptions: {
-            bar: {
-              horizontal: false,
-              columnWidth: '10px',
-              endingShape: 'rounded'
             },
           },
           dataLabels: {
@@ -29,33 +25,28 @@
           legend: {
             show: false,
           },
-          colors:  '#2377FC',
+          colors: ['#8D79F6', '#2377FC'],
           stroke: {
-            show: false,
-          },
-          xaxis: {
-            categories: ['Mon' , 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            curve: 'smooth'
           },
           yaxis: {
             show: false,
           },
-          fill: {
-            opacity: 1
+          xaxis: {
+            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
           },
           tooltip: {
-            y: {
-              formatter: function (val) {
-                return "$ " + val + " thousands"
-              }
-            }
-          }
-        };
+            x: {
+              format: 'dd/mm/yy'
+            },
+          },
+          };
 
         chart = new ApexCharts(
-          document.querySelector("#line-chart-21"),
+          document.querySelector("#line-chart-22"),
           options
         );
-        if ($("#line-chart-21").length > 0) {
+        if ($("#line-chart-22").length > 0) {
           chart.render();
         }
       };

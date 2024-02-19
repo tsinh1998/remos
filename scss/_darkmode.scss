@@ -1,54 +1,54 @@
 .dark-theme {
-    --White: #1E293B;
-    --Heading : #FFF;
-    --Input :#324055;
-    --Body-Text: #94A3B8;
-    --Note : #94A3B8;
+    // --White: #1E293B;
+    // --Heading : #FFF;
+    // --Input :#324055;
+    // --Body-Text: #94A3B8;
+    // --Note : #94A3B8;
 
-    .image-select .dropdown-toggle,
-    .header-dashboard .wrap .header-item {
-        background: #2A3649;
-    }
-    .popup-wrap.message > .text-tiny,
-    .popup-wrap.noti > .text-tiny {
-        color: #FFF;
-    }
-    .section-menu-left {
-        .bot .wrap,
-        > .box-logo {
-            border-color: #283548;
-        }
-    }
-    #logo_header_mobile {
-        display: inline;
-    }
-    #logo_header {
-        display: none;
-    }
-    .main-content {
-        background-color: #0F172A;
-    }
-    .divider {
-        background: #283548;
-    }
-    .block-available {
-        background: #2A4432;
-    }
-    .wg-pagination {
-        li {
-            a {
-              color: #94A3B8;
-              border-color: #283548;
-            }
-            &:hover,
-            &.active {
-                a {
-                    color: #FFF;
-                }
-                i {
-                    color: #FFF;
-                }
-            }
-        }
-    }
+    // .image-select .dropdown-toggle,
+    // .header-dashboard .wrap .header-item {
+    //     background: #2A3649;
+    // }
+    // .popup-wrap.message > .text-tiny,
+    // .popup-wrap.noti > .text-tiny {
+    //     color: #FFF;
+    // }
+    // .section-menu-left {
+    //     .bot .wrap,
+    //     > .box-logo {
+    //         border-color: #283548;
+    //     }
+    // }
+    // #logo_header_mobile {
+    //     display: inline;
+    // }
+    // #logo_header {
+    //     display: none;
+    // }
+    // .main-content {
+    //     background-color: #0F172A;
+    // }
+    // .divider {
+    //     background: #283548;
+    // }
+    // .block-available {
+    //     background: #2A4432;
+    // }
+    // .wg-pagination {
+    //     li {
+    //         a {
+    //           color: #94A3B8;
+    //           border-color: #283548;
+    //         }
+    //         &:hover,
+    //         &.active {
+    //             a {
+    //                 color: #FFF;
+    //             }
+    //             i {
+    //                 color: #FFF;
+    //             }
+    //         }
+    //     }
+    // }
 }

@@ -1080,3 +1080,27 @@
         position: relative;
     }
 }
+
+.wg-social {
+    padding-left: 14px;
+    padding-right: 14px;
+    @include d-flex;
+    gap: 8px;
+    li {
+        a {
+            @include flex(center,center);
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: 1px solid #94A3B81A;
+            font-size: 18px;
+            color: #BCC6D1;
+        }
+        &:hover,
+        &.active {
+            a {
+                color: #2377FC;
+            }
+        }
+    }
+}
