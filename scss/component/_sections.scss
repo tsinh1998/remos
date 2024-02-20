@@ -221,3 +221,82 @@
         gap: 52px;
     }
 }
+
+.offcanvas {
+    width: 530px;
+    border: none;
+    padding: 30px;
+    border-radius: 14px 0px 0px 14px;
+    gap: 24px;
+    .offcanvas-header {
+        padding: 0;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #EDF1F5;
+        .btn-close {
+            font-size: 18px;
+            color: var(--Heading);
+            opacity: 1;
+            border: none;
+            outline: 0;
+        }
+    }
+    .offcanvas-body {
+        padding: 0;
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+        form {
+            @include d-flex;
+            flex-direction: column;
+            gap: 20px;
+            .radio-buttons {
+                display: grid !important;
+                gap: 10px;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                .item {
+                    width: 100%;
+                    max-width: 150px;
+                    input {
+                        top: 10px;
+                        left: 10px;
+                    }
+                    label {
+                        width: 100%;
+                        justify-content: start;
+                        height: 44px;
+                        padding: 12px 0 12px 40px;
+                    }
+                }
+            }
+            &.form-theme-color {
+                .radio-buttons {
+                    .item {
+                        max-width: unset;
+                        input {
+                            width: 18px;
+                            height: 18px;
+                            font-size: 18px;
+                            padding: 0;
+                            border: none;
+                            background-color: #fff !important;
+                            &::before {
+                                width: 18px;
+                                height: 18px;
+                                font-size: 18px;
+                                border: none;
+                                border-radius: 0;
+                            }
+                        }
+                        label {
+                            width: 40px;
+                            height: 40px;
+                            background-color: #FFFFFF;
+                            border-radius: 14px;
+                            border: 1px solid #EDF1F5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

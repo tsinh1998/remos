@@ -168,6 +168,15 @@
     }
   }
 
+  var select_colors_theme = function () {
+    if ($('div').hasClass("select-colors-theme")) {
+      $(".item").on("click", function (e) {
+        $(this).parents(".select-colors-theme").find(".active").removeClass("active");
+        $(this).toggleClass("active");
+      })
+    }
+  }
+
 
   // Dom Ready
   $(function () {
@@ -182,6 +191,7 @@
     showpass();
     gallery();
     coppy();
+    select_colors_theme();
     
   });
 

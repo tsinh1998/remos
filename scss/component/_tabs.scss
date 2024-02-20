@@ -27,5 +27,26 @@
                 }
             }
         }
+        &.style-1 {
+            padding: 8px;
+            border-radius: 14px;
+            gap: 10px;
+            background-color: var(--Input);
+            .item-title {
+                border-radius: 14px;
+                padding: 12px 20px;
+                width: 100%;
+                text-align: center;
+                &::after {
+                    display: none;
+                }
+                &.active {
+                    background-color: #fff;
+                    .body-title {
+                        color: #2377FC;
+                    }
+                }
+            }
+        }
     }
 }

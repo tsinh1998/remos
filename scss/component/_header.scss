@@ -50,6 +50,16 @@
         .header-grid {
             @include d-flex;
             gap: 20px;
+            > .divider {
+                width: 1px;
+                background: #ECF0F4;
+                height: unset;
+            }
+            > .setting {
+                width: 24px;
+                @include flex(center,center);
+                font-size: 24px;
+            }
         }
         .header-item {
             @include flex(center,center);

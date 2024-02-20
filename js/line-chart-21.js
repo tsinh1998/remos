@@ -5,51 +5,53 @@
       var chartBar = function () {
       
         var options = {
-            series: [{
-            name: 'Revenue',
-            data: [135, 182, 76, 112, 199, 168, 49]
-          }],
-            chart: {
-            type: 'bar',
-            height: 320,
-            toolbar: {
+          series: [{
+          name: '',
+          data: [44, 55, 41, 67, 22, 43, 21]
+        }, {
+          name: '',
+          data: [13, 23, 20, 8, 13, 27, 33]
+        }],
+          chart: {
+          type: 'bar',
+          height: 330,
+          stacked: true,
+          stackType: '100%',
+          toolbar: {
               show: false,
-            },
           },
-          plotOptions: {
-            bar: {
-              horizontal: false,
-              columnWidth: '10px',
-              endingShape: 'rounded'
-            },
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '10px',
           },
-          dataLabels: {
-            enabled: false
-          },
-          legend: {
-            show: false,
-          },
-          colors:  '#2377FC',
-          stroke: {
-            show: false,
-          },
-          xaxis: {
-            categories: ['Mon' , 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-          },
-          yaxis: {
-            show: false,
-          },
-          fill: {
-            opacity: 1
+        },
+        xaxis: {
+          categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          axisTicks: {
+              show: false
           },
           tooltip: {
-            y: {
-              formatter: function (val) {
-                return "$ " + val + " thousands"
-              }
+              enabled: false
             }
-          }
-        };
+        },
+        fill: {
+          opacity: 1
+        },
+        stroke: {
+          show: false
+        },
+        legend: {
+          show: false
+        },
+        yaxis: {
+          show: false,
+        },
+        dataLabels: {
+          enabled: false
+        },
+        colors: ['#2377FC','#97C0FF'],
+      };
 
         chart = new ApexCharts(
           document.querySelector("#line-chart-21"),

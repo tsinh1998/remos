@@ -65,6 +65,7 @@
             }
         }
     }
+    .tf-section-8,
     .tf-section-3 {
         > div {
             &:nth-child(2),
@@ -108,6 +109,14 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .wg-goal {
+        .left {
+            min-width: unset;
+        }
+    }   
+}
+
 @media (max-width: 991px) {
     .section-menu-left {
         left: -100%;
@@ -132,7 +141,10 @@
                     display: none;
                 }
                 .header-grid {
+                    > .divider,
                     > .user,
+                    > .apps,
+                    > .button-dark-light,
                     > .button-zoom-maximize,
                     > .message,
                     > .noti,

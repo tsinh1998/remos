@@ -85,6 +85,38 @@
             }
         }
     }
+    &.apps {
+        position: relative;
+        > .text-tiny {
+            position: absolute;
+            z-index: 5;
+            top: -4px;
+            right: -5px;
+            @include flex(center,center);
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+            background: var(--Style);
+            color: var(--White);
+        }
+        .dropdown-menu.show {
+            width: 368px;
+            .list-apps {
+                display: grid !important;
+                gap: 10px 8px;
+                grid-template-columns: repeat(3,minmax(0,1fr));
+                .item {
+                   border: 1px solid #EDF1F5;
+                   border-radius: 14px;
+                   padding: 17.5px 0;
+                   text-align: center;
+                   @include d-flex;
+                   flex-direction: column;
+                   gap: 10px;
+                }
+            }
+        }
+    }
     &.user {
         .dropdown-menu.show {
             width: 188px;
