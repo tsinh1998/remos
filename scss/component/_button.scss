@@ -17,9 +17,9 @@
     @include transition3();
     &:hover {
         color: var(--Main);    
-        background-color: var(--White);
+        background-color: #FFF;
         span {
-            color: var(--White) !important;     
+            color: #FFF !important;
         }
     }
     i {
@@ -27,18 +27,18 @@
     }
     &.style-1 {
         color: var(--Main);    
-        background-color: var(--White);
+        background-color: #FFF;
         &:hover {
-            color: var(--White);    
+            color: #FFF;    
             background-color: var(--Main);
         }
     }
     &.style-2 {
-        color: var(--Body-Text);    
-        background-color: var(--White);
+        color: #575864;    
+        background-color: #FFF;
         border-color: var(--Input);
         &:hover {
-            color: var(--White);    
+            color: #FFF;    
             background-color: var(--Main);
         }
     }

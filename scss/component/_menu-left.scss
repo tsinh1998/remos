@@ -18,17 +18,24 @@
     }
     &.active {
         left: -100%;
+        > .box-logo {
+            left: -100%;
+            border-bottom: 0;
+            padding: 14px 20px ;
+            background-color: #fff;
+        }
     }
     > .box-logo {
         position: fixed;
         top: 0;
         left: 0;
         z-index: 30;
-        padding: 14px 20px;
+        padding: 14px 20px 13px 20px;
         width: 280px;
         background-color: #1E293B;
         border-bottom: 1px solid #283548;
         @include flex(center,space-between);
+        @include transition3;
     }
     > .center {
         padding: 20px;
@@ -166,7 +173,7 @@
                     }
                     &:not(.has-children) {
                         &.active {
-                            background-color: #E9F2FF;
+                            background-color: rgba(35, 119, 252, 0.1);
                             border-radius: 12px;
                         }
                     }

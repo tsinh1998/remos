@@ -31,7 +31,7 @@
             padding: 8px;
             border-radius: 14px;
             gap: 10px;
-            background-color: var(--Input);
+            background-color: #ECF0F4;
             .item-title {
                 border-radius: 14px;
                 padding: 12px 20px;
@@ -45,6 +45,9 @@
                     .body-title {
                         color: #2377FC;
                     }
+                }
+                .body-title {
+                    color: #111111;
                 }
             }
         }

@@ -6,7 +6,6 @@
         var options = {
           series: [61],
           chart: {
-          // height: 128,
           height: 185,
           type: 'radialBar',
         },

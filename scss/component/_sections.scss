@@ -11,14 +11,13 @@
             padding: 30px 13px 30px 30px;
             flex-grow: 1;
             .main-content-wrap {
-                max-width: 1580px;
                 width: 100%;
                 margin: auto;
             }
         }
         .bottom-page {
             @include flex(center,center);
-            padding: 24px 8px 8px 24px;
+            padding: 24px 8px 24px 24px;
             gap: 10px;
             background: var(--White);
             box-shadow: 0px 4px 24px 2px rgba(20, 25, 38, 0.05);
@@ -37,6 +36,9 @@
     &.active {
         .main-content {
             padding-left: 0;
+        }
+        .header-dashboard {
+            width: 100%;
         }
     }
 }
@@ -232,9 +234,12 @@
         padding: 0;
         padding-bottom: 14px;
         border-bottom: 1px solid #EDF1F5;
+        h6 {
+            color: #111111;
+        }
         .btn-close {
             font-size: 18px;
-            color: var(--Heading);
+            color: #111111;
             opacity: 1;
             border: none;
             outline: 0;
@@ -298,5 +303,12 @@
                 }
             }
         }
+    }
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
     }
 }

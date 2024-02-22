@@ -3,9 +3,12 @@
     &::-webkit-scrollbar {
         width: 0px;
     }
+    .table-title {
+        justify-content: space-between;
+    }
     &.table-best-shop-sellers {
         > * {
-            width: 532px;
+            min-width: 532px;
         }
         ul.table-title {
             li {
@@ -44,7 +47,7 @@
     }
     &.table-product-overview {
         > * {
-            width: 932px;
+            min-width: 932px;
         }
         ul.table-title {
             li {
@@ -103,7 +106,7 @@
         }
         &.t1 {
             > * {
-                width: 1532px;
+                min-width: 1532px;
             }
             ul.table-title {
                 li {
@@ -136,7 +139,7 @@
         }
         &.t2 {
             > * {
-                width: 1532px;
+                min-width: 1532px;
             }
             ul.table-title {
                 li {
@@ -169,7 +172,7 @@
         }
         &.t3 {
             > * {
-                width: 1132px;
+                min-width: 1132px;
             }
             ul.table-title {
                 li {
@@ -202,7 +205,7 @@
         }
         &.t4 {
             > * {
-                width: 732px;
+                min-width: 732px;
             }
             ul.table-title {
                 li {
@@ -244,7 +247,7 @@
     }
     &.table-orders {
         > * {
-            width: 465px;
+            min-width: 465px;
         }
         ul.table-title {
             li {
@@ -277,7 +280,7 @@
     }
     &.table-top-product {
         > * {
-            width: 532px;
+            min-width: 532px;
         }
         .product-item {
             > .flex {
@@ -300,7 +303,7 @@
     }
     &.table-top-selling-product {
         > * {
-            width: 732px;
+            min-width: 732px;
         }
         ul.table-title {
             li {
@@ -344,7 +347,7 @@
         overflow-y: auto !important;
         height: 383px;
         > * {
-            width: 732px;
+            min-width: 732px;
         }
         ul.table-title {
             li {
@@ -386,7 +389,7 @@
     }
     &.table-customers {
         > * {
-            width: 998px;
+            min-width: 998px;
         }
         ul.table-title {
             li {
@@ -412,7 +415,7 @@
     }
     &.table-top-product-1 {
         > * {
-            width: 465px;
+            min-width: 465px;
         }
         ul.table-title {
             li {
@@ -447,12 +450,12 @@
     }
     &.table-product-list {
         > * {
-            width: 1532px;
+            min-width: 1532px;
         }
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:first-child {
@@ -495,18 +498,18 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: rgba(246, 248, 251, 0.8);
+                background: var(--bg-table);
             }
         }
     }
     &.table-all-category {
         > * {
-            width: 1532px;
+            min-width: 1532px;
         }
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:first-child {
@@ -539,7 +542,7 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: rgba(246, 248, 251, 0.8);
+                background: var(--bg-table);
             }
         }
     }
@@ -550,7 +553,7 @@
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:last-child {
@@ -573,7 +576,7 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: #F7FAFC;
+                background: var(--bg-table-1);
             }
         }
     }
@@ -581,7 +584,7 @@
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
         }
         .product-item {
             padding: 12px;
@@ -598,7 +601,7 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: #F7FAFC;
+                background: var(--bg-table-1);
             }
         }
     }
@@ -611,7 +614,7 @@
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 &:first-child {
                     width: 69.1%;
@@ -635,7 +638,7 @@
     }
     &.table-order-track {
         > * {
-            width: 1532px;
+            min-width: 1532px;
             &:last-child {
                 padding: 0 12px;
             }
@@ -643,7 +646,7 @@
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:nth-child(1) {
@@ -682,12 +685,12 @@
     }
     &.table-all-user {
         > * {
-            width: 1532px;
+            min-width: 1532px;
         }
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:last-child {
@@ -716,18 +719,18 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: rgba(246, 248, 251, 0.8);
+                background: var(--bg-table);
             }
         }
     }
     &.table-all-roles {
         > * {
-            width: 1532px;
+            min-width: 1532px;
         }
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:first-child {
@@ -762,18 +765,18 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: #F7FAFC;
+                background: var(--bg-table-1);
             }
         }
     }
     &.table-create-role {
         > * {
-            width: 1532px;
+            min-width: 1532px;
         }
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
             }
@@ -799,18 +802,18 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: #F7FAFC;
+                background: var(--bg-table-1);
             }
         }
     }
     &.table-countries {
         > * {
-            width: 1532px;
+            min-width: 1532px;
         }
         ul.table-title {
             padding: 12px;
             border-radius: 12px;
-            background: rgba(246, 248, 251, 0.80);
+            background: var(--bg-table);
             li {
                 width: 100%;
                 &:nth-child(1) {
@@ -861,19 +864,19 @@
             }
             &:nth-child(2n+1) {
                 border-radius: 12px;
-                background: #F7FAFC;
+                background: var(--bg-table-1);
             }
         }
     }
     &.table-revision-history {
         > * {
-            width: 1102px;
+            min-width: 1102px;
         }
         ul {
             &.table-title {
                 padding: 12px;
                 border-radius: 12px;
-                background: rgba(246, 248, 251, 0.80);
+                background: var(--bg-table);
                 li {
                     width: 100%;
                 }

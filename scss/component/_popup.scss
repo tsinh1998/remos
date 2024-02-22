@@ -55,6 +55,7 @@
             h6 {
                 padding-bottom: 14px;
                 border-bottom: 1px solid #EDF1F5;
+                border-bottom: 1px solid var(--Stroke);
             }
         }
     }
@@ -70,7 +71,19 @@
             height: 16px;
             border-radius: 999px;
             background: var(--Style);
-            color: var(--White);
+            color: #fff;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                width: 16px;
+                height: 16px;
+                background-color: var(--Style);
+                border-radius: 50%;
+                z-index: -1;
+                animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
+            }
         }
         .dropdown-menu.show {
             width: 344px;
@@ -159,9 +172,21 @@
             @include flex(center,center);
             width: 16px;
             height: 16px;
-                border-radius: 999px;
+            border-radius: 999px;
             background: var(--Main);
-            color: var(--White);
+            color: #fff;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                width: 16px;
+                height: 16px;
+                background-color: var(--Main);
+                border-radius: 50%;
+                z-index: -1;
+                animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
+            }
         }
         .dropdown-menu.show {
             width: 344px;
