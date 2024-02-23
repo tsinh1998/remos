@@ -50,17 +50,17 @@
             position: relative;
             @include d-flex;
             align-items: center;
+            gap: 15px;
+            > a {
+                display: none;
+            }
             .button-show-hide {
-                margin-right: 15px;
                 font-size: 24px;
                 color: #94A3B8;
                 cursor: pointer;
                 @include transition3;
                 transform: rotate(180deg);
                 display: none;
-                &.active {
-                    display: block;
-                }
             }
             .box-content-search {
                 position: absolute;

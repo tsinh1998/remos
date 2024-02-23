@@ -1,0 +1,52 @@
+.layout-wrap {
+    &.menu-position-scrollable {
+        @include d-flex;
+        .section-menu-left {
+            position: relative;
+            height: unset;
+        }
+        .section-content-right {
+            .main-content {
+                padding-left: 0;
+            }
+        }
+        &.full-width {
+            .section-content-right {
+                .main-content {
+                    margin-left: -280px;
+                }
+            }
+        }
+    }
+    &.header-position-scrollable {
+        .header-dashboard {
+            
+        }
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .layout-wrap {
+        &.menu-position-scrollable {
+            margin-left: -280px;
+            &.full-width {
+                margin-left: 0;
+                .section-menu-left {
+                    left: 0;
+                    position: fixed;
+                }
+                .section-content-right {
+                    .main-content {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}

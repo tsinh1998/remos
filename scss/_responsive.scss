@@ -119,42 +119,64 @@
 }
 
 @media (max-width: 991px) {
-    .section-menu-left {
-        left: -100%;
-        &.active {
-            left: 0;
-        }
-        .button-show-hide {
-            transform: rotate(180deg);
-            &.active {
-                transform: rotate(0deg);
-            }
-        }
-    }
-    .section-content-right {
-        .main-content {
-            padding-left: 0;
-            .main-content-inner {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-        }
-        .header-dashboard {
-            .wrap {
-                justify-content: flex-end;
-                .header-search {
-                    display: none;
+    .layout-wrap {
+        &.full-width {
+            .section-menu-left {
+                left: 0;
+                .button-show-hide {
+                    transform: rotate(0deg);
                 }
-                .header-grid {
-                    > .divider,
-                    > .user,
-                    > .apps,
-                    > .button-dark-light,
-                    > .button-zoom-maximize,
-                    > .message,
-                    > .noti,
-                    > .country {
+                .box-logo {
+                    left: 0;
+                    background-color: #1E293B;
+                }
+            }
+        }
+
+        .section-menu-left {
+            left: -100%;
+            .button-show-hide {
+                transform: rotate(180deg);
+            }
+            .box-logo {
+                background-color: #fff;
+                border-color: #fff;
+                left: -100%;
+            }
+        }
+        .section-content-right {
+            .main-content {
+                padding-left: 0;
+                .main-content-inner {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            .header-dashboard {
+                width: 100%;
+                .wrap {
+                    .button-show-hide {
+                        display: block;
+                    }
+                    .form-search {
                         display: none;
+                    }
+                    .header-left {
+                        > a {
+                            display: block;
+                        }
+                    }
+                    .header-grid {
+                        > .divider,
+                        > .user,
+                        > .apps,
+                        > .button-dark-light,
+                        > .button-zoom-maximize,
+                        > .message,
+                        > .noti,
+                        > .country {
+                            display: none;
+                        }
                     }
                 }
             }

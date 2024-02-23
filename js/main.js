@@ -83,14 +83,18 @@
   }}
 
   var collapse_menu = function () {
-    if ($('div').hasClass('layout-wrap')) {
-      $(".button-show-hide").on("click", function (e) {
-        $('.button-show-hide').toggleClass('active');
-        $('.layout-wrap').toggleClass('active');
-        $('.section-menu-left').toggleClass('active');
-        $('.section-content-right').toggleClass('active');
-      })
-    }
+    $(".button-show-hide").on("click", function () {
+
+      if (!$(".layout-wrap").hasClass("full-width")) {
+        $(".layout-width").find(".full").prop("checked", true);
+        $(".layout-width").find(".boxed").prop("checked", false);
+        $('.layout-wrap').addClass('full-width');
+      } else {
+        $(".layout-width").find(".full").prop("checked", false);
+        $(".layout-width").find(".boxed").prop("checked", true);
+        $('.layout-wrap').removeClass('full-width');
+      }
+    })
   }
 
   var retinaLogos = function() {
