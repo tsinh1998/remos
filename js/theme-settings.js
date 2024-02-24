@@ -18,10 +18,10 @@ if ($("body").hasClass("dark-theme")) {
 
 // layout width style
 $(".layout-width .full").on("click", function () {
-    $(".layout-wrap").addClass("full-width");
+    $(".layout-wrap").addClass("layout-full-width");
 })
 $(".layout-width .boxed").on("click", function () {
-    $(".layout-wrap").removeClass("full-width");
+    $(".layout-wrap").removeClass("layout-full-width");
 })
 
 // menu position style

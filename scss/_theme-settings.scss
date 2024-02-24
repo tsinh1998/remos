@@ -19,12 +19,84 @@
         }
     }
     &.header-position-scrollable {
-        .header-dashboard {
-            
+        .section-content-right {
+            .header-dashboard {
+                position: relative;
+                width: 100%;
+                padding-left: 310px;
+            }
+            .main-content {
+                padding-top: 0;
+            }
+        }
+        &.full-width {
+            .section-content-right {
+                .header-dashboard {
+                    padding-left: 30px;
+                }
+            }
+        }
+        &.menu-position-scrollable {
+            .section-content-right {
+                .header-dashboard {
+                    padding-left: 30px;
+                }
+            }
+            &.full-width {
+                .section-content-right {
+                    .header-dashboard {
+                        width: 100vw;
+                        left: -280px;                    
+                    }
+                }
+            }
+
         }
     }
-
-
+    &.menu-style-icon {
+        .section-menu-left {
+            width: 92px;
+            min-width: 92px;
+            .box-logo {
+                width: 92px;
+                // width: 130px;
+                .button-show-hide {
+                    // transform: rotate(180deg);
+                    display: none;
+                }
+            }
+            >.center {
+                > .center-item {
+                    .center-heading {
+                        display: none;
+                    }
+                    .menu-list {
+                        >.menu-item {
+                            > a {
+                                justify-content: center;
+                                > .text {
+                                    display: none;
+                                }
+                            }
+                            > .sub-menu {
+                                display: none !important;
+                            }
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                    .wg-social {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+            }
+            > .bot {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {

@@ -28,7 +28,7 @@
             > .dropdown-toggle {
                 cursor: pointer;
                 padding: 0;
-                overflow: hidden;
+                overflow: unset;
                 background: none;
                 border: none;
                 &::after {
@@ -61,32 +61,38 @@
     }
     &.noti {
         position: relative;
-        > .text-tiny {
-            position: absolute;
-            z-index: 5;
-            top: -4px;
-            right: -5px;
-            @include flex(center,center);
-            width: 16px;
-            height: 16px;
-            border-radius: 999px;
-            background: var(--Style);
-            color: #fff;
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                right: 0;
-                width: 16px;
-                height: 16px;
-                background-color: var(--Style);
-                border-radius: 50%;
-                z-index: -1;
-                animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
+        > .dropdown {
+            .header-item {
+                position: relative;
+                > .text-tiny {
+                    position: absolute;
+                    z-index: 5;
+                    top: -4px;
+                    right: -5px;
+                    @include flex(center,center);
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 999px;
+                    background: var(--Style);
+                    color: #fff;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        right: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-color: var(--Style);
+                        border-radius: 50%;
+                        z-index: -1;
+                        animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
+                    }
+                }
             }
         }
         .dropdown-menu.show {
             width: 344px;
+            margin-top: 20px !important;
             .noti-item {
                 .image {
                     width: 52px;
@@ -114,6 +120,7 @@
         }
         .dropdown-menu.show {
             width: 368px;
+            margin-top: 20px !important;
             .list-apps {
                 display: grid !important;
                 gap: 10px 8px;
@@ -133,6 +140,7 @@
     &.user {
         .dropdown-menu.show {
             width: 188px;
+            margin-top: 19px !important;
             .user-item {
                 @include flex(center,start);
                 height: 20px;
@@ -164,32 +172,38 @@
     }
     &.message {
         position: relative;
-        > .text-tiny {
-            position: absolute;
-            z-index: 5;
-            top: -4px;
-            right: -5px;
-            @include flex(center,center);
-            width: 16px;
-            height: 16px;
-            border-radius: 999px;
-            background: var(--Main);
-            color: #fff;
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                right: 0;
-                width: 16px;
-                height: 16px;
-                background-color: var(--Main);
-                border-radius: 50%;
-                z-index: -1;
-                animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
+        > .dropdown {
+            .header-item {
+                position: relative;
+                > .text-tiny {
+                    position: absolute;
+                    z-index: 5;
+                    top: -4px;
+                    right: -5px;
+                    @include flex(center,center);
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 999px;
+                    background: var(--Main);
+                    color: #fff;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        right: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-color: var(--Main);
+                        border-radius: 50%;
+                        z-index: -1;
+                        animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
+                    }
+                }
             }
         }
         .dropdown-menu.show {
             width: 344px;
+            margin-top: 20px !important;
             .message-item {
                 @include flex(center,start);
                 gap: 15px;

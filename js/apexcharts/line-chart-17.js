@@ -6,21 +6,49 @@
         var options = {
           series: [61],
           chart: {
-          height: 185,
-          type: 'radialBar',
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '61%',
+            height: 150,
+            type: 'radialBar'
+          },
+          plotOptions: {
+            radialBar: {
+              hollow: {
+                margin: 0,
+                size: '60%',
+                background: 'transparent',
+                imageOffsetX: 0,
+                imageOffsetY: 0,
+                position: 'front'
+              },
+              track: {
+                background: '#003A95',
+                strokeWidth: '50%'
+              },
+    
+              dataLabels: {
+                show: true,
+                name: {
+                  show: false
+                },
+                value: {
+                  formatter: function (val) {
+                    return parseInt(val);
+                  },
+                  offsetY: 7,
+                  color: '#fff',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  show: true
+                }
+              }
             }
           },
-        },
-        stroke: {
-          lineCap: 'round'
-        },
-        colors: ['#FFFFFF'],
-        labels: ['Goal'],
+          colors: ['#fff'],
+          fill: {
+            type: 'solid'
+          },
+          stroke: {
+            lineCap: 'round'
+          }
         };
         chart = new ApexCharts(
           document.querySelector("#line-chart-17"),

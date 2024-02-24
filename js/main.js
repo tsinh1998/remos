@@ -84,16 +84,7 @@
 
   var collapse_menu = function () {
     $(".button-show-hide").on("click", function () {
-
-      if (!$(".layout-wrap").hasClass("full-width")) {
-        $(".layout-width").find(".full").prop("checked", true);
-        $(".layout-width").find(".boxed").prop("checked", false);
-        $('.layout-wrap').addClass('full-width');
-      } else {
-        $(".layout-width").find(".full").prop("checked", false);
-        $(".layout-width").find(".boxed").prop("checked", true);
-        $('.layout-wrap').removeClass('full-width');
-      }
+      $('.layout-wrap').toggleClass('full-width');
     })
   }
 
