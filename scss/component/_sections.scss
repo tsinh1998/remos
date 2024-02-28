@@ -1,5 +1,6 @@
 .layout-wrap {
     .section-content-right {
+        @include transition3;
         .main-content {
             @include d-flex;
             flex-direction: column;
@@ -42,6 +43,7 @@
             }
             .header-dashboard {
                 width: 100%;
+                padding-left: 30px !important;
             }
         }
     }
@@ -258,6 +260,14 @@
             @include d-flex;
             flex-direction: column;
             gap: 20px;
+            > fieldset {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #EDF1F5;
+                &:last-of-type {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+            }
             .radio-buttons {
                 display: grid !important;
                 gap: 10px;

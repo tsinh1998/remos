@@ -208,6 +208,10 @@
     }
     &.style-1 {
         flex-direction: row;
+        gap: 0;
+        .wrap-chart {
+            width: 216px;
+        }
     }
 }
 
@@ -1206,7 +1210,108 @@
     }
 }
 
+.circle_percent {
+    font-size: 128px;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    background: #003A95;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    .circle_inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1em;
+        height: 1em;
+        clip: rect(0 1em 1em .5em);
+        .round_per {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1em;
+            height: 1em;
+            background: #2377FC;
+            clip: rect(0 1em 1em .5em);
+            transform: rotate(180deg);
+            transition: 1.05s;
+        }
+    }
+    .circle_inbox {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        right: 7px;
+        bottom: 7px;
+        background: #fff;
+        z-index: 3;
+        border-radius: 50%;
+        .percent_text {
+            position: absolute;
+            font-size: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+    }
+    &.percent_more {
+        .circle_inner {
+            clip: rect(0 .5em 1em 0em);
+        }
+        &:after {
+            position: absolute;
+            left: .5em;
+            top: 0em;
+            right: 0;
+            bottom: 0;
+            background: #2377FC;
+            content: '';
+        }
+    
+    }
+}
 
+// preload
+#preload {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    @include transition3;
+    .preloading {
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        @include center(-50%,-50%);
+        span {
+            content: "";
+            display: block;
+            border-radius: 50%;
+            border: 4px solid var(--Main);
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include center(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            border-left-color: transparent;
+            -webkit-animation: rotate360 2s infinite linear;
+            -moz-animation: rotate360 2s infinite linear;
+            -ms-animation: rotate360 2s infinite linear;
+            -o-animation: rotate360 2s infinite linear;
+            animation: rotate360 2s infinite linear;
+        }
+    }
+}
 
 
 

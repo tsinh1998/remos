@@ -161,14 +161,8 @@
         $(this).parents(".product-item").remove();
         $(this).parents(".attribute-item").remove();
         $(this).parents(".countries-item").remove();
-      })
-    }
-  }
-
-  var box_search = function () {
-    if ($('div').hasClass("header-search")) {
-      $(".header-search").on("click", function (e) {
-        $(".box-content-search").addClass("active");
+        $(this).parents(".user-item").remove();
+        $(this).parents(".roles-item").remove();
       })
     }
   }
@@ -197,6 +191,14 @@
    
   }
 
+  var preloader = function () {
+    setTimeout(function () {
+    $("#preload").fadeOut("slow", function () {
+        $(this).remove();
+    });
+    }, 1000);
+  };
+
 
   // Dom Ready
   $(function () {
@@ -213,6 +215,7 @@
     select_colors_theme();
     icon_function();
     box_search();
+    preloader();
     
   });
 

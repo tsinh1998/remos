@@ -19,6 +19,13 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+@mixin transition0() {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
 @mixin d-flex() {
     display: -webkit-box;
     display: -moz-box;

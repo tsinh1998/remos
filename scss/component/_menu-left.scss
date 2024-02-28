@@ -216,6 +216,9 @@
         .header-dashboard {
             .button-show-hide {
                 display: block;
+                i {
+                    color: var(--Main);
+                }
             }
         }
     }
