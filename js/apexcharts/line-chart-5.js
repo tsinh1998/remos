@@ -18,6 +18,7 @@
             dataLabels: {
               enabled: false
             },
+            colors: ["#2377FC"],
             series: [
               {
                 name: "$",
@@ -33,7 +34,15 @@
                 stops: [0, 90, 100]
               }
             },
+            yaxis: {
+              show: false,
+            },
             xaxis: {
+              labels: {
+                style: {
+                  colors: '#95989D',
+                },
+              },
               categories: [
                 "Jan",
                 "Feb",

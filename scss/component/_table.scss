@@ -43,6 +43,14 @@
                     }
                 }
             }
+            .body-text {
+                color: var(--Heading);
+            }
+            a {
+                &:hover {
+                    color: var(--Main);
+                }
+            }
         }
     }
     &.table-product-overview {
@@ -276,6 +284,9 @@
                     }
                 }
             }
+            .body-text {
+                color: var(--Heading);
+            }
         }
     }
     &.table-top-product {
@@ -298,6 +309,9 @@
                         width: 39px;
                     }
                 }
+            }
+            .body-text {
+                color: var(--Heading);
             }
         }
     }
@@ -563,7 +577,7 @@
             }
         }
         .attribute-item {
-            padding: 12px;
+            padding: 11px 12px;
             .body-text {
                 color: var(--Heading);
             }

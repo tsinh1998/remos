@@ -8,7 +8,7 @@
         left: 0;
         overflow-y: auto;
         z-index: 20;
-        background-color: #1E293B;
+        background-color: #fff;
         box-shadow: 0px 0px 24px 2px rgba(20, 25, 38, 0.05);
         padding-top: 81px;
         @include flex(center,start);
@@ -25,8 +25,8 @@
             z-index: 30;
             padding: 14px 20px 13px 20px;
             width: 280px;
-            background-color: #1E293B;
-            border-bottom: 1px solid #283548;
+            background-color: #fff;
+            border-bottom: 1px solid #F2F7FB;
             @include flex(center,space-between);
             @include transition3;
         }
@@ -34,7 +34,7 @@
             padding: 20px;
             width: 100%;
             .center-heading {
-                color: #BDCFD3;
+                color: #BDC7D3;
                 font-size: 12px;
                 font-weight: 700;
                 line-height: 15px;
@@ -64,12 +64,12 @@
                                 svg,
                                 i {
                                     font-size: 20px;
-                                    color: #94A3B8;
+                                    color: #111111;
                                     @include transition3;
                                 }
                             }
                             .text {
-                                color: #C8D3E5;
+                                color: #111111;
                                 font-size: 14px;
                                 font-weight: 600;
                                 line-height: 17px;
@@ -81,11 +81,11 @@
                                 &::after,
                                 i,
                                 .text {
-                                    color: #2377FC !important;
+                                    color: var(--Main) !important;
                                 }
                                 svg {
                                     path {
-                                        stroke: #2377FC !important;
+                                        stroke: var(--Main) !important;
                                     }
                                 }
                             }
@@ -98,7 +98,7 @@
                                 content: '\e934';
                                 top: 15px;
                                 right: 14px;
-                                color: #94A3B8;
+                                color: #111111;
                                 font-size: 16px;
                                 font-family: $fontIcon;
                                 @include transition3;
@@ -116,7 +116,7 @@
                                     padding: 0;
                                     position: relative;
                                     .text {
-                                        color: #C8D3E5;
+                                        color: #575864;
                                     }
                                     &::before {
                                         position: absolute;
@@ -130,7 +130,7 @@
                                     }
                                     &.active {
                                         &::before {
-                                            border-color: #2377FC;
+                                            border-color: var(--Main);
                                         }
                                     }
                                 }
@@ -141,7 +141,7 @@
                                     background: rgba(35, 119, 252, 0.10);
                                     i,
                                     .text {
-                                        color: #2377FC;
+                                        color: var(--Main);
                                     }
                                     &::after {
                                         position: absolute;
@@ -150,14 +150,14 @@
                                         left: -24px;
                                         width: 8px;
                                         height: 34px;
-                                        background-color: #2377FC;
+                                        background-color: var(--Main);
                                         border-radius: 8px;
                                     }
                                 }
                                 &::after {
                                     top: 14px;
                                     transform: rotate(180deg);
-                                    color: #2377FC;
+                                    color: var(--Main);
                                 }
                                 > .sub-menu {
                                     display: block;
@@ -174,11 +174,23 @@
                 }
             }
         }
+        a {
+            position: relative;
+        }
         .button-show-hide {
+            position: relative;
             font-size: 24px;
             color: #94A3B8;
             cursor: pointer;
             @include transition3;
+            i {
+                @include transition3;
+            }
+            &:hover {
+                i {
+                    color: var(--Main);
+                }
+            }
         }
         .bot {
             width: 100%;
@@ -186,12 +198,12 @@
             .wrap {
                 padding: 16px 16px 9px 16px;
                 border-radius: 12px;
-                border: 1px solid #283548;
+                border: 1px solid #F2F7FB;
                 h6 {
-                    color: #fff;
+                    color: #111111;
                 }
                 .text {
-                    color: #94A3B8;
+                    color: #575864;
                     font-size: 12px;
                     font-weight: 400;
                     line-height: 15px;
@@ -223,3 +235,15 @@
         }
     }
 }
+
+// .wrap-section-menu-left {
+//     position: relative;
+//     &::before {
+//         position: absolute;
+//         content: '';
+//         top: 0;
+//         left: 0;
+//         width: 280px;
+//         height: 100vh;
+//     }
+// }

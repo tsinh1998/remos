@@ -100,12 +100,18 @@
             max-width: 150px !important;
         }
     }
-    .wg-user {
+    .header-user {
         width: unset;
         > div {
             &:last-child {
                 display: none;
             }
+        }
+    }
+    .new-page-wrap {
+        flex-wrap: wrap;
+        .right {
+            max-width: unset;
         }
     }
 }
@@ -128,11 +134,14 @@
                 }
                 .box-logo {
                     left: 0;
-                    background-color: #1E293B;
+                }
+            }
+            .section-content-right {
+                .header-dashboard {
+                    padding-left: 15px !important;
                 }
             }
         }
-
         .section-menu-left {
             left: -100%;
             .button-show-hide {

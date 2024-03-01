@@ -31,6 +31,11 @@
           axisTicks: {
               show: false
           },
+          labels: {
+            style: {
+              colors: '#95989D',
+            },
+          },
           tooltip: {
               enabled: false
             }
@@ -50,7 +55,7 @@
         dataLabels: {
           enabled: false
         },
-        colors: ['#2377FC','#97C0FF'],
+        colors: ['#2377FC','#D3E4FE'],
       };
 
         chart = new ApexCharts(

@@ -13,7 +13,6 @@
 	* Typography
 	* Extra classes
     * link style
-    * tf-container
 
 */
 
@@ -836,40 +835,5 @@ a {
         text-decoration   : none;
         outline           : 0;
         @include transition3;
-    }
-}
-
-/* tf-container
--------------------------------------------------------------- */
-.tf-container {
-    position     : relative;
-    margin-left  : auto;
-    margin-right : auto;
-    padding-right: 10px;
-    padding-left : 10px;
-    width        : 1600px;
-    max-width    : 100%;
-    &.full {
-        width: 100%;
-    }
-    .row {
-        margin-left: -10px !important;
-        margin-right: -10px !important;
-        > * {
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-        }
-    }
-    &.space30 {
-        padding-right: 15px;
-        padding-left : 15px;
-        .row {
-            margin-left: -15px !important;
-            margin-right: -15px !important;
-            > * {
-                padding-left: 15px !important;
-                padding-right: 15px !important;
-            }
-        }
     }
 }

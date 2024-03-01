@@ -133,6 +133,16 @@
                    @include d-flex;
                    flex-direction: column;
                    gap: 10px;
+                   a {
+                    .text-tiny {
+                        @include transition3;
+                    }
+                    &:hover {
+                        .text-tiny {
+                            color: var(--Main);
+                        }
+                    }
+                   }
                 }
             }
         }
@@ -150,10 +160,12 @@
                     i {
                         font-size: 20px;
                         color: var(--Icon);
+                        @include transition3;
                     }
                 }
                 .body-title-2 {
                     flex-grow: 1;
+                    @include transition3;
                 }
                 .number {
                     @include flex(center,center);
@@ -166,6 +178,16 @@
                     font-size: 12px;
                     font-weight: 500;
                     line-height: 12px;
+                }
+                &:hover {
+                    .body-title-2 {
+                        color: var(--Main);
+                    }
+                    .icon {
+                        i {
+                            color: var(--Main);
+                        }
+                    }
                 }
             }
         }
@@ -184,7 +206,7 @@
                     width: 16px;
                     height: 16px;
                     border-radius: 999px;
-                    background: var(--Main);
+                    background: #2275fc;
                     color: #fff;
                     &::after {
                         position: absolute;
@@ -193,7 +215,7 @@
                         right: 0;
                         width: 16px;
                         height: 16px;
-                        background-color: var(--Main);
+                        background-color: #2275fc;
                         border-radius: 50%;
                         z-index: -1;
                         animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
@@ -272,6 +294,7 @@
             margin-top: 15px !important;
             min-width: 120px;
             padding: 0;
+            box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.10) inset, 0px 8px 22px 0px rgba(4, 8, 16, 0.30);
             a {
                 @include d-flex;
                 font-size: 14px;

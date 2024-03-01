@@ -14,7 +14,7 @@
           }],
             chart: {
             type: 'bar',
-            height: 470,
+            height: 520,
             toolbar: {
               show: false,
             },
@@ -37,6 +37,11 @@
             show: false,
           },
           xaxis: {
+            labels: {
+              style: {
+                colors: '#95989D',
+              },
+            },
             categories: ['Jan' , 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
           },
           yaxis: {

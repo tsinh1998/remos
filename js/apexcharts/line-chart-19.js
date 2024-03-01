@@ -34,6 +34,11 @@
             axisTicks: {
                 show: false
             },
+            labels: {
+              style: {
+                colors: '#95989D',
+              },
+            },
             tooltip: {
                 enabled: false
               }

@@ -10,6 +10,14 @@ form {
                 border: 0;
                 font-size: 20px;
                 color: var(--Heading);
+                i {
+                    @include transition3;
+                }
+                &:hover {
+                    i {
+                        color: var(--Main)
+                    }
+                }
             }
         }
     }

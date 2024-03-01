@@ -16,7 +16,7 @@
             data: [21, 22, 35, 22, 24, 42, 31, 21, 30, 18, 41, 30]
           }],
             chart: {
-            height: 483,
+            height: 523,
             type: 'area',
             toolbar: {
               show: false,
@@ -33,7 +33,19 @@
             curve: 'smooth'
           },
           xaxis: {
+            labels: {
+              style: {
+                colors: '#95989D',
+              },
+            },
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+          },
+          yaxis: {
+            labels: {
+              style: {
+                colors: '#95989D',
+              },
+            },
           },
           tooltip: {
             x: {

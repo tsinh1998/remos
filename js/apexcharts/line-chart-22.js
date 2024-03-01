@@ -33,6 +33,11 @@
             show: false,
           },
           xaxis: {
+            labels: {
+              style: {
+                colors: '#95989D',
+              },
+            },
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
           },
           tooltip: {

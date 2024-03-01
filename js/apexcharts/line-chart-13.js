@@ -18,7 +18,7 @@
           }],
             chart: {
             type: 'bar',
-            height: 200,
+            height: 170,
             toolbar: {
               show: false,
             },

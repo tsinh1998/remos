@@ -8,6 +8,7 @@
     --bg-table : #28354852;
     --bg-table-1 : #28354852;
 
+    background: #0F172A;
     .button-dark-light {
         i {
             &::before {
@@ -97,5 +98,81 @@
             color: #94A3B8;
         }
     }
+    .section-menu-left {
+        background-color: #1E293B;
+        > .box-logo {
+            background-color: #1E293B;
+            border-bottom-color: #283548;
+        }
+        > .center {
+            .center-item {
+                .center-heading {
+                    color: #BDCFD3;
+                }
+                .menu-list {
+                    .menu-item {
+                        a {
+                            .icon {
+                                i {
+                                    color: #94A3B8;
+                                }
+                                svg {
+                                    path {
+                                        stroke: #94A3B8;
+                                    }
+                                }
+                            }
+                            .text {
+                                color: #fff;
+                            }
+                        }
+                        &.has-children {
+                            .sub-menu {
+                                a {
+                                    .text {
+                                        color: #94A3B8;
+                                    }
+                                }
+                            }
+                            &::after {
+                                color: #94A3B8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bot {
+            .wrap {
+                border-color: #283548;
+                h6 {
+                    color: #fff;
+                }
+                .text {
+                    color: #94A3B8;
+                }
+            }
+        }
+    }
+    
+    .apexcharts-tooltip {
+        background: #94A3B8 !important;
+        .apexcharts-tooltip-title {
+           background: #94A3B8 !important;
+        }
+    }
+}
 
+@media (max-width: 991px) {
+    .dark-theme {
+        .layout-wrap {
+            &.full-width {
+                .section-menu-left {
+                    > .box-logo {
+                        background-color: #1E293B;
+                    }
+                }
+            }
+        }
+    }
 }
