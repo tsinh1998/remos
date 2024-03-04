@@ -1,5 +1,16 @@
 /**
-    * 
+    * selectImages
+    * menuleft
+    * tabs
+    * progresslevel
+    * collapse_menu
+    * fullcheckbox
+    * showpass
+    * gallery
+    * coppy
+    * select_colors_theme
+    * icon_function
+    * box_search
     * preloader
 */
 
@@ -87,20 +98,6 @@
       $('.layout-wrap').toggleClass('full-width');
     })
   }
-
-  // var retinaLogos = function() {
-  //   var retina = window.devicePixelRatio > 1 ? true : false;
-  //     if(retina) {
-  //       var tfheader =$('#logo_header').data('retina');
-  //       var tfwidth =$('#logo_header').data('width');
-  //       var tfheight =$('#logo_header').data('height');
-  //       $('#logo_header').attr({src:tfheader,width:tfwidth,height:tfheight});
-  //       var tfmobile =$('#logo_header_mobile').data('retina');
-  //       var tfmobile_width =$('#logo_header_mobile').data('width');
-  //       var tfmobile_height =$('#logo_header_mobile').data('height');
-  //       $('#logo_header_mobile').attr({src:tfmobile,width:tfmobile_width,height:tfmobile_height});
-  //     }
-  // };  
 
   var fullcheckbox = function () {
     $('.total-checkbox').on('click', function () {
