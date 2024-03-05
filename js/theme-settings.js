@@ -4,8 +4,6 @@
                 
     var tflight =$('#logo_header').data('light');
     var tfdark =$('#logo_header').data('dark');
-    var tflight =$('#logo_header_mobile').data('light');
-    var tfdark =$('#logo_header_mobile').data('dark');
 
     // setting theme style
     // ---------------------------------

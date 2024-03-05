@@ -1,9 +1,4 @@
 (function ($) {
-    if ($('body').hasClass("dark-theme")) {
-      var colors = ["#fff"];
-    } else {
-      var colors = ["#2275fc"];
-    }
     
     var tfLineChart = (function () {
   
@@ -23,7 +18,7 @@
             dataLabels: {
               enabled: false
             },
-            colors: colors,
+            colors: ["#2275fc"],
             series: [
               {
                 name: "$",
@@ -91,10 +86,5 @@
       tfLineChart.load();
     });
 
-    $('.button-dark-light').on("click", function () {
-      tfLineChart.load();
-      console.log(1);
-    });
-  
     jQuery(window).on("resize", function () {});
 })(jQuery);
