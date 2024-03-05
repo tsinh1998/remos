@@ -1,5 +1,10 @@
 (function ($) {
-  
+    if ($(".dark-theme").length > 0) {
+      var colors = ["#fff"];
+    } else {
+      var colors = ["#2275fc"];
+    }
+    
     var tfLineChart = (function () {
   
       var chartBar = function () {
@@ -18,7 +23,7 @@
             dataLabels: {
               enabled: false
             },
-            colors: ["#2377FC"],
+            colors: colors,
             series: [
               {
                 name: "$",

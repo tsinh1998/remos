@@ -168,8 +168,11 @@
                         }
                     }
                     .wg-social {
-                        flex-wrap: wrap;
-                        justify-content: center;
+                        li {
+                            &:not(:first-child) {
+                                opacity: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -205,8 +208,11 @@
                             }
                         }
                         .wg-social {
-                            flex-wrap: wrap;
-                            justify-content: center;
+                            li {
+                                &:not(:first-child) {
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
                 }

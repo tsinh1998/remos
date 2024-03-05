@@ -127,7 +127,7 @@ $(document).ready(function () {
                     '<div class="widget-content-inner">' +
                         '<form class="form-theme-color">' +
                             '<fieldset class="menu-color">' +
-                                '<div class="body-title mb-10">Menu color</div>' +
+                                '<div class="body-title mb-10">Menu Background color</div>' +
                                 '<div class="select-colors-theme colors-menu mb-10">' +
                                     '<div class="item color-fff active default"></div>' +
                                     '<div class="item color-1E293B"></div>' +
@@ -137,7 +137,7 @@ $(document).ready(function () {
                                 '<div class="text-tiny">Note:If you want to change color Menu dynamically change from below Theme Primary color picker</div>' +
                             '</fieldset>' +
                             '<fieldset class="">' +
-                                '<div class="body-title mb-10">Header color</div>' +
+                                '<div class="body-title mb-10">Header Background color</div>' +
                                 '<div class="select-colors-theme colors-header mb-10">' +
                                     '<div class="item color-fff active default"></div>' +
                                     '<div class="item color-1E293B"></div>' +
@@ -147,7 +147,7 @@ $(document).ready(function () {
                                 '<div class="text-tiny">Note:If you want to change color Menu dynamically change from below Theme Primary color picker</div>' +
                             '</fieldset>' +
                             '<fieldset class="">' +
-                                '<div class="body-title mb-10">Theme Primary</div>' +
+                                '<div class="body-title mb-10">Theme Primary color</div>' +
                                 '<div class="select-colors-theme colors-theme-primary mb-10">' +
                                     '<div class="item color-2377FC active default"></div>' +
                                     '<div class="item color-DE6E49"></div>' +
@@ -160,7 +160,7 @@ $(document).ready(function () {
                                 '</div>' +
                             '</fieldset>' +
                             '<fieldset class="">' +
-                                '<div class="body-title mb-10">Theme Background</div>' +
+                                '<div class="body-title mb-10">Theme Background color</div>' +
                                 '<div class="select-colors-theme colors-theme-background mb-10">' +
                                     '<div class="item color-F2F7FB active default"></div>' +
                                     '<div class="item color-252E3A"></div>' +

@@ -174,17 +174,32 @@
     }});
         
     $('.show-search').on('click',function(event){
-        event.stopPropagation();});
+      event.stopPropagation();}
+    );
     $('.search-form').on('click',function(event){
-        event.stopPropagation();});
-    $('.show-search').on('click',function(event){
-        if(!$('.box-content-search').hasClass("active")){
-            $('.box-content-search').addClass('active');
-                event.preventDefault();
-            }
-    })
+      event.stopPropagation();}
+    );
+    var input =  $('.header-dashboard').find('.form-search').find('input');
+    input.on('input', function() {
+      if ($(this).val().trim() !== '') {
+        $('.box-content-search').addClass('active');
+      } else {
+        $('.box-content-search').removeClass('active');
+      }
+    });
    
   }
+
+  var retinaLogos = function() {
+    var retina = window.devicePixelRatio > 1 ? true : false;
+      if(retina) {
+        if ($(".dark-theme").length > 0) {
+          $('#logo_header').attr({src:'images/logo/logo-dark@2x.png',width:'154px',height:'52px'});
+        } else {
+          $('#logo_header').attr({src:'images/logo/logo@2x.png',width:'154px',height:'52px'});
+        }
+      }
+  };  
 
   var preloader = function () {
     setTimeout(function () {
@@ -209,6 +224,7 @@
     select_colors_theme();
     icon_function();
     box_search();
+    retinaLogos();
     preloader();
     
   });
