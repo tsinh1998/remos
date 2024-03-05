@@ -7,6 +7,7 @@
     --Stroke : #283548;
     --bg-table : #28354852;
     --bg-table-1 : #28354852;
+    --hv-item: #ffffff24;
 
     background: #0F172A;
     .button-dark-light {
@@ -34,7 +35,7 @@
                 }
             }
             .box-content-search {
-                box-shadow: 0px 4px 24px 2px rgba(255, 255, 255, 0.1) !important;
+                box-shadow: 0px 4px 24px 2px #141926CC !important;
             }
         }
     }
@@ -178,7 +179,22 @@
         }
     }
     .dropdown-menu {
-        box-shadow: 0px 4px 24px 2px rgb(255 255 255 / 10%) !important;
+        box-shadow: 0px 4px 24px 2px #141926CC !important;
+    }
+    .popup-wrap.apps .dropdown-menu.show .list-apps .item {
+        border-color: #283548;
+    }
+    .apexcharts-grid {
+        .apexcharts-gridlines-horizontal {
+            line {
+                stroke: #475569 !important;
+            }
+        }
+    }
+    .apexcharts-grid-borders {
+        line {
+            stroke: #475569 !important;
+        }
     }
 }
 

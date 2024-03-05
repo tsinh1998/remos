@@ -47,6 +47,8 @@
             @include d-flex;
             flex-direction: column;
             padding: 16px;
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
             gap: 24px;
             border-radius: 14px;
             border: none;
@@ -62,6 +64,7 @@
     &.noti {
         position: relative;
         > .dropdown {
+            .item,
             .header-item {
                 position: relative;
                 > .text-tiny {
@@ -87,6 +90,17 @@
                         z-index: -1;
                         animation: ping 1s cubic-bezier(0,0,.2,1) infinite ;
                     }
+                }
+            }
+            .item {
+                @include flex(center,center);
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background: rgba(203, 213, 225, 0.30);
+                i {
+                    font-size: 20px;
+                    color: var(--Heading);
                 }
             }
         }
@@ -293,6 +307,8 @@
         > .dropdown-menu {
             margin-top: 15px !important;
             min-width: 120px;
+            background-color: var(--White);
+            border: 0;
             padding: 0;
             box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.10) inset, 0px 8px 22px 0px rgba(4, 8, 16, 0.30);
             a {

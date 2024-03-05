@@ -114,7 +114,7 @@
         }
         &.t1 {
             > * {
-                min-width: 1532px;
+                min-width: 1515px;
             }
             ul.table-title {
                 li {
@@ -147,7 +147,7 @@
         }
         &.t2 {
             > * {
-                min-width: 1532px;
+                min-width: 1515px;
             }
             ul.table-title {
                 li {
@@ -180,7 +180,7 @@
         }
         &.t3 {
             > * {
-                min-width: 1132px;
+                min-width: 1119px;
             }
             ul.table-title {
                 li {
@@ -213,7 +213,7 @@
         }
         &.t4 {
             > * {
-                min-width: 732px;
+                min-width: 724px;
             }
             ul.table-title {
                 li {
@@ -317,7 +317,7 @@
     }
     &.table-top-selling-product {
         > * {
-            min-width: 732px;
+            min-width: 724px;
         }
         ul.table-title {
             li {
@@ -361,7 +361,7 @@
         overflow-y: auto !important;
         height: 383px;
         > * {
-            min-width: 732px;
+            min-width: 721px;
         }
         ul.table-title {
             li {
@@ -403,7 +403,7 @@
     }
     &.table-customers {
         > * {
-            min-width: 998px;
+            min-width: 987px;
         }
         ul.table-title {
             li {
@@ -429,7 +429,7 @@
     }
     &.table-top-product-1 {
         > * {
-            min-width: 465px;
+            min-width: 460px;
         }
         ul.table-title {
             li {
@@ -464,7 +464,7 @@
     }
     &.table-product-list {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
         }
         ul.table-title {
             padding: 12px;
@@ -489,6 +489,7 @@
         }
         .product-item {
             padding: 12px;
+            border-radius: 12px;
             .body-text {
                 color: var(--Heading);
             }
@@ -511,14 +512,13 @@
                 }
             }
             &:nth-child(2n+1) {
-                border-radius: 12px;
                 background: var(--bg-table);
             }
         }
     }
     &.table-all-category {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
         }
         ul.table-title {
             padding: 12px;
@@ -538,6 +538,7 @@
         }
         .product-item {
             padding: 12px;
+            border-radius: 12px;
             .body-text {
                 color: var(--Heading);
             }
@@ -555,7 +556,6 @@
                 }
             }
             &:nth-child(2n+1) {
-                border-radius: 12px;
                 background: var(--bg-table);
             }
         }
@@ -578,6 +578,8 @@
         }
         .attribute-item {
             padding: 11px 12px;
+            border-radius: 12px;
+            @include transition3;
             .body-text {
                 color: var(--Heading);
             }
@@ -589,8 +591,10 @@
                 }
             }
             &:nth-child(2n+1) {
-                border-radius: 12px;
                 background: var(--bg-table-1);
+            }
+            &:hover {
+                background-color: var(--hv-item) !important;
             }
         }
     }
@@ -602,6 +606,7 @@
         }
         .product-item {
             padding: 12px;
+            border-radius: 12px;
             .text-tiny {
                 color: var(--Body-Text);
             }
@@ -614,7 +619,6 @@
                 }
             }
             &:nth-child(2n+1) {
-                border-radius: 12px;
                 background: var(--bg-table-1);
             }
         }
@@ -652,7 +656,7 @@
     }
     &.table-order-track {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
             &:last-child {
                 padding: 0 12px;
             }
@@ -699,7 +703,7 @@
     }
     &.table-all-user {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
         }
         ul.table-title {
             padding: 12px;
@@ -715,6 +719,7 @@
         }
         .user-item {
             padding: 12px;
+            border-radius: 12px;
             .body-text {
                 color: var(--Heading);
             }
@@ -732,14 +737,13 @@
                 }
             }
             &:nth-child(2n+1) {
-                border-radius: 12px;
                 background: var(--bg-table);
             }
         }
     }
     &.table-all-roles {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
         }
         ul.table-title {
             padding: 12px;
@@ -763,6 +767,7 @@
             gap: 20px;
             padding: 21px 12px;
             border-radius: 12px;
+            @include transition3;
             .body-text {
                 color: var(--Heading);
             }
@@ -778,8 +783,10 @@
                 }
             }
             &:nth-child(2n+1) {
-                border-radius: 12px;
                 background: var(--bg-table-1);
+            }
+            &:hover {
+                background-color: var(--hv-item) !important;
             }
         }
     }
@@ -801,6 +808,7 @@
             gap: 20px;
             padding: 21px 12px;
             border-radius: 12px;
+            @include transition3;
             input {
                 width: 22px;
                 height: 22px;
@@ -818,11 +826,14 @@
                 border-radius: 12px;
                 background: var(--bg-table-1);
             }
+            &:hover {
+                background-color: var(--hv-item) !important;
+            }
         }
     }
     &.table-countries {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
         }
         ul.table-title {
             padding: 12px;
@@ -854,6 +865,7 @@
             gap: 20px;
             padding: 20px 12px;
             border-radius: 12px;
+            @include transition3;
             .body-text {
                 color: var(--Heading);
             }
@@ -880,11 +892,14 @@
                 border-radius: 12px;
                 background: var(--bg-table-1);
             }
+            &:hover {
+                background-color: var(--hv-item) !important;
+            }
         }
     }
     &.table-revision-history {
         > * {
-            min-width: 1102px;
+            min-width: 1000px;
         }
         ul {
             &.table-title {

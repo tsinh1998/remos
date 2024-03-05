@@ -1,5 +1,5 @@
 (function ($) {
-    if ($(".dark-theme").length > 0) {
+    if ($('body').hasClass("dark-theme")) {
       var colors = ["#fff"];
     } else {
       var colors = ["#2275fc"];
@@ -89,6 +89,11 @@
   
     jQuery(window).on("load", function () {
       tfLineChart.load();
+    });
+
+    $('.button-dark-light').on("click", function () {
+      tfLineChart.load();
+      console.log(1);
     });
   
     jQuery(window).on("resize", function () {});

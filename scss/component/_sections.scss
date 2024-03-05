@@ -234,8 +234,22 @@
     width: 530px;
     border: none;
     padding: 30px;
-    border-radius: 14px 0px 0px 14px;
     gap: 24px;
+    &.offcanvas-end {
+        border-radius: 14px 0px 0px 14px;
+    }
+    &.offcanvas-top {
+        border-radius: 0px 0px 14px 14px;
+        width: 100%;
+    }
+    &.offcanvas-start {
+        border-radius: 0px 14px 14px 0px;
+        height: 100%;
+    }
+    &.offcanvas-bottom {
+        border-radius: 14px 14px 0px 0px;
+        width: 100%;
+    }
     .offcanvas-header {
         padding: 0;
         padding-bottom: 14px;
