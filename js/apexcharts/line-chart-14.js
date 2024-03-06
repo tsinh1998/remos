@@ -56,7 +56,20 @@
           },
           fill: {
             opacity: 1
-          }
+          },
+          responsive: [{
+            breakpoint: 991,
+            options: {
+              chart: {
+                height: 500
+              },
+              plotOptions: {
+                bar: {
+                  columnWidth: '20px',
+                },
+              },
+            }
+          }]
           };
 
         chart = new ApexCharts(

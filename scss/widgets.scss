@@ -277,6 +277,7 @@
     }
     &:hover {
         background-color: var(--hv-item) !important;
+        border-radius: 10px;
     }
 }
 
@@ -326,9 +327,6 @@
         &:hover {
             color: var(--Main);
         }
-    }
-    &:hover {
-        background-color: var(--hv-item) !important;
     }
 }
 
@@ -458,7 +456,7 @@
 
 .block-warning {
     @include flex(center,start);
-    width: max-content;
+    width: fit-content;
     padding: 13px 15px;
     gap: 10px;
     border-radius: 12px;
@@ -858,7 +856,7 @@
             margin: auto;
             margin-bottom: 20px;
             font-size: 24px;
-            color: var(--White);
+            color: #fff;
             position: relative;
         }
         h6 {
@@ -911,9 +909,6 @@
     .text-tiny {
         line-height: 20px
     }
-    &:hover {
-        background-color: var(--hv-item) !important;
-    }
 }
 
 .radio-buttons {
@@ -961,7 +956,7 @@
                 }
                 ~ label {
                     background-color: #2377FC;
-                    div {
+                    * {
                         color: #fff;
                     }
                 }
@@ -985,7 +980,7 @@
         .wrap-gallery-item {
             @include grid(6,1fr,24px,14px);
             &.list {
-                @include grid(1,1fr,24px,14px);
+                @include grid(3,1fr,24px,14px);
                 .gallery-item {
                     flex-direction: row;
                     align-items: center;
@@ -1387,4 +1382,8 @@
 #line-chart-7 {
     margin-top: -15px;
     margin-bottom: -10px;
+}
+
+#line-chart-9 {
+    margin-bottom: -100px;
 }

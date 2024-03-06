@@ -196,6 +196,18 @@
             stroke: #475569 !important;
         }
     }
+    .tf-button {
+        &:hover {
+            background-color: #2275fccc;
+            color: #fff;
+        }
+        &.style-1 {
+            background-color: #fff;
+            &:hover {
+                background-color: #2275fc;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {

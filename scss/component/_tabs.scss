@@ -8,11 +8,11 @@
         li {
             cursor: pointer;
             position: relative;
-            h6 {
+            * {
                 color: var(--Note);
             }
             &.active {
-                h6 {
+                * {
                     color: var(--Main);
                 }
                 &::after {

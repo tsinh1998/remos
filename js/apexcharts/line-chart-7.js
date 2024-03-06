@@ -40,6 +40,14 @@
             },
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
           },
+          responsive: [{
+            breakpoint: 991,
+            options: {
+              chart: {
+                height: 400
+              },
+            }
+          }],
           yaxis: {
             labels: {
               style: {

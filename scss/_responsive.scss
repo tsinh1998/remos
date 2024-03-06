@@ -110,6 +110,12 @@
             max-width: unset;
         }
     }
+    .upload-image {
+        flex-wrap: wrap;
+        .item {
+            width: 48%;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -199,6 +205,9 @@
             }
         }
     }
+    #line-chart-9 {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -255,8 +264,7 @@
             flex-wrap: wrap;
         }
     }
-    .flex-wrap-mobile,
-    .upload-image {
+    .flex-wrap-mobile {
         flex-wrap: wrap;
     }
     .road-map {
@@ -275,5 +283,10 @@
         padding-top: 30px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .upload-image {
+        .item {
+            width: 100%;
+        }
     }
 }

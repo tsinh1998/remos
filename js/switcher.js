@@ -21,7 +21,7 @@ window.console =
 $(document).ready(function () {
     var e =
 
-    '<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">' +
+    '<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">' +
         '<div class="offcanvas-header">' +
             '<h6 id="offcanvasRightLabel">Setting</h6>' +
             '<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>' +
@@ -227,7 +227,7 @@ $(document).ready(function () {
     var x =
 
     '<div class="divider"></div>' +
-    '<div class="setting cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">' +
+    '<div class="setting cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">' +
         '<i class="icon-settings"></i>' +
     '</div>' ;
     

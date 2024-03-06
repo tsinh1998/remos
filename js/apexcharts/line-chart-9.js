@@ -8,7 +8,7 @@
             series: [90, 35, 41],
             chart: {
             type: 'donut',
-            height: 323,
+            height: 423,
           },
           plotOptions: {
             pie: {
@@ -22,6 +22,14 @@
               bottom: -80
             }
           },
+          responsive: [{
+            breakpoint: 991,
+            options: {
+              chart: {
+                height: 300
+              },
+            }
+          }],
           legend: {
             show: false,
           }

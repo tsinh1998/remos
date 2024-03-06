@@ -255,7 +255,7 @@
     }
     &.table-orders {
         > * {
-            min-width: 465px;
+            min-width: 459px;
         }
         ul.table-title {
             li {
@@ -266,7 +266,7 @@
                     width: 110px;
                 }
                 &:nth-child(3) {
-                    width: 110px;
+                    width: 100px;
                 }
             }
         }
@@ -280,7 +280,7 @@
                         width: 110px;
                     }
                     &:nth-child(3) {
-                        width: 110px;
+                        width: 100px;
                     }
                 }
             }
@@ -644,7 +644,7 @@
         }
         .cart-totals-item {
             @include d-flex;
-            > div {
+            > * {
                 &:first-child {
                     width: 69.1%;
                 }
@@ -739,6 +739,9 @@
             &:nth-child(2n+1) {
                 background: var(--bg-table);
             }
+            &:hover {
+                background-color: var(--hv-item) !important;
+            }
         }
     }
     &.table-all-roles {
@@ -792,7 +795,7 @@
     }
     &.table-create-role {
         > * {
-            min-width: 1532px;
+            min-width: 1515px;
         }
         ul.table-title {
             padding: 12px;
