@@ -3696,6 +3696,11 @@ select.h40 {
   margin-top: 16px;
   padding-left: 44px;
   margin-bottom: 16px;
+  width: 240px;
+  overflow-x: auto;
+}
+.layout-wrap .section-menu-left > .center .center-item .menu-list .menu-item.has-children .sub-menu::-webkit-scrollbar {
+  width: 0px;
 }
 .layout-wrap .section-menu-left > .center .center-item .menu-list .menu-item.has-children .sub-menu .sub-menu-item:not(:last-child) {
   margin-bottom: 16px;

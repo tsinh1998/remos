@@ -109,6 +109,11 @@
                                 margin-top: 16px;
                                 padding-left: 44px;
                                 margin-bottom: 16px;
+                                width: 240px;
+                                overflow-x: auto;
+                                &::-webkit-scrollbar {
+                                    width: 0px;
+                                }
                                 .sub-menu-item:not(:last-child) {
                                     margin-bottom: 16px;
                                 }
