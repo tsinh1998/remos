@@ -1243,6 +1243,7 @@ a:hover, a:focus {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  padding-right: 5px;
 }
 .product-item .image {
   display: -webkit-box;
@@ -2167,6 +2168,10 @@ a:hover, a:focus {
 .all-gallery-wrap .left .wrap-gallery-item.list .gallery-item {
   flex-direction: row;
   align-items: center;
+}
+.all-gallery-wrap .left .wrap-gallery-item.list .gallery-item .text-tiny {
+  overflow: unset;
+  height: unset;
 }
 .all-gallery-wrap .right {
   width: 100%;
@@ -5198,6 +5203,9 @@ select.h40 {
 }
 .dark-theme .apexcharts-grid-borders line {
   stroke: #475569 !important;
+}
+.dark-theme .tf-button {
+  border: 0;
 }
 .dark-theme .tf-button:hover {
   background-color: rgba(34, 117, 252, 0.8);

@@ -238,6 +238,7 @@
     @include flex(center,center);
     gap: 15px;
     @include transition3;
+    padding-right: 5px;
     .image {
         @include flex(center,center);
         width: 50px;
@@ -984,6 +985,10 @@
                 .gallery-item {
                     flex-direction: row;
                     align-items: center;
+                    .text-tiny {
+                        overflow: unset;
+                        height: unset;
+                    }
                 }
             }
         }
