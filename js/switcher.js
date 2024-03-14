@@ -80,6 +80,10 @@ $(document).ready(function () {
                                         '<input class="icon-hover" type="radio" name="menu-style" id="menu-style2">' +
                                         '<label class="" for="menu-style2"><div class="body-title">Icon hover</div></label>' +
                                     '</div>' +
+                                    '<div class="item">' +
+                                        '<input class="icon-default" type="radio" name="menu-style" id="menu-style3">' +
+                                        '<label class="" for="menu-style3"><div class="body-title">Icon default</div></label>' +
+                                    '</div>' +
                                 '</div>' +
                             '</fieldset>' +
                             '<fieldset class="menu-position">' +
