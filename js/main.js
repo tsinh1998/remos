@@ -114,9 +114,9 @@
       $(this).toggleClass("active");
       var input = $(this).parents(".password").find(".password-input");
 
-      if (input.attr("type") == "password") {
+      if (input.attr("type") === "password") {
         input.attr("type", "text");
-      } else if (input.attr("type") == "text") {
+      } else if (input.attr("type") === "text") {
         input.attr("type", "password");
       }
     });
